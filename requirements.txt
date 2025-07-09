@@ -1,0 +1,26 @@
+# Deutsche Podcast TTS - Speechify API Integration
+# Hochqualitative Text-zu-Sprache mit Speechify
+
+# Speechify Official SDK
+speechify-api>=1.2.0
+
+# Audio Processing für MP3/WAV Export
+pydub>=0.25.1
+
+# Audio Processing Support (Python 3.13 compatibility)
+audioop-lts>=0.2.1
+
+# Scientific Computing
+numpy>=1.24.0
+
+# Environment Variables (.env Support)
+python-dotenv>=1.0.0
+
+# JSON und Web-Interface Support
+flask>=2.3.0
+
+# Utilities
+tqdm>=4.64.0
+
+# Optional: Development und Testing
+pytest>=7.0.0
