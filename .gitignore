@@ -71,3 +71,6 @@ models/
 
 # TTS Models (downloaded automatically)
 tts_models/
+
+output/
+movies/

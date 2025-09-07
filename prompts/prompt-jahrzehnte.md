@@ -1,63 +1,128 @@
-Erstelle ein Podcastskript mit mindestens 60 Minuten Sprechzeit (7.000–8.000 Wörter), vollständig als Dialog zwischen zwei Personen (z.B. Daniel und Annabelle).
-Der Stil soll sich anfühlen wie ein echtes Gespräch und kein bloßes Frage-Antwort-Spiel sein.
-Der Dialog muss immer so formatiert sein, dass der Sprechername am Anfang steht, dann ein Doppelpunkt, dann der vollständige Text des Sprechers in derselben Zeile.
-Zum Beispiel:
-daniel: Das war der Soundtrack einer ganzen Generation – voller Hoffnung, Aufbruch und Sehnsucht.
-annabelle: Und genau das hört man auch heute noch, wenn man die alten Songs auflegt.
+Abendfüllendes Podcastskript: Die Musik der 1950er Jahre
 
-Wichtige Regeln:
+Sprache
+- Hier Sprache eintragen, z.B. Deutsch, Englisch, Spanisch, Französisch, ...
 
-    Der Podcast heißt „Melody Mind“. Bitte erwähne den Namen im Einstieg (Begrüßung) und im Abschluss (Verabschiedung) so, dass es wie eine echte Podcast-Episode klingt.
+## 1️⃣ Ziel  
+Erstellung eines abendfüllenden **Melody Mind Podcastskripts** im **natürlichen Studiogespräch-Stil** zwischen **Daniel** und **Annabelle**, mit besonderem Fokus auf ein bestimmtes Musikjahrzehnt.  
+Gesamtumfang: **ca. 22.000–23.000 Wörter**.
 
-    Beginne mit einem persönlichen, lockeren Einstieg und einer Begrüßung durch beide Sprecher, bevor ihr ins Thema eintaucht.
+---
 
-    Schreibe lange, ausführliche Passagen pro Sprecher (also mehrere Absätze am Stück, bevor der andere übernimmt), so dass jeder wirklich „ausreden“ darf.
+## 2️⃣ Kapitelstruktur & Wortverteilung (optimiert nach Female-Version)  
 
-    Setze auf Tiefe, erzähl Geschichten, bringe Hintergründe, Anekdoten, „Film-im-Kopf“-Erzählungen.
+1. **Einstieg & Zeitkolorit des Jahrzehnts** *(2 Teile à ca. 1.250 Wörter)*  
+   - Bildhafter Einstieg: typisches Alltagsbild, Geräuschkulisse, Gerüche, erste Musikeindrücke.  
+   - Politische und gesellschaftliche Grundstimmung, Alltag, Technik, Jugendkultur.  
+   - Erste Hinweise auf musikalische Strömungen.  
+   - Organischer Übergang zu den prägenden Musiker*innen.  
+   **Gesamt: ca. 2.500 Wörter**
 
-    Nenne konkrete Album- und Songtipps, aber beschreibe auch die Hintergründe, Entstehung, Reaktionen und das gesellschaftliche Drumherum zu diesen Songs/Alben.
+2. **Wegbereiter*innen & Geburtsmomente der Ära** *(3 Teile à ca. 1.500 Wörter)*  
+   - Erste Stars und Bands, die den Sound des Jahrzehnts formten.  
+   - Historische Anekdoten zu Debütauftritten, Studiomomenten, Radiopremieren.  
+   - Persönliche Bezüge und Einschätzungen der Sprecher.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Beziehe immer wieder Alltagsszenen, gesellschaftliche Kontraste, Moden, Filmszenen, Techniktrends und kulturelle Details mit ein – die Musik soll als Teil eines echten Lebensgefühls spürbar werden.
+3. **Musikalische Revolutionen & technische Innovationen** *(3 Teile à ca. 1.500 Wörter)*  
+   - Songwriting, Arrangements, neue Sounds, Studioarbeit.  
+   - Instrumente und technische Erfindungen, die prägend waren.  
+   - Internationale Einflüsse und gegenseitige Inspiration.  
+   - Szenen aus dem Studio oder von legendären Live-Auftritten.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Zeige auch persönliche Meinungen, emotionale Reaktionen und kleine dialogische Reibungen, sodass der Dialog lebendig und authentisch wirkt.
+4. **Gesellschaft, Alltag & kultureller Wandel** *(3 Teile à ca. 1.500 Wörter)*  
+   - Protestbewegungen, Umbrüche, kulturelle Konflikte.  
+   - Alltagsleben der Musiker*innen auf Tour, im Studio, Backstage.  
+   - Gesellschaftliche Themen, die in Songs verarbeitet wurden.  
+   - Persönliche und emotionale Dimension.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Das Gespräch darf immer wieder abzweigen, abschweifen, in Erinnerungen schwelgen und dann wieder zurück zum Thema finden – Hauptsache, es entsteht ein echter Fluss und Sog.
+5. **Popkultur, Medien & Crossover-Einflüsse** *(3 Teile à ca. 1.500 Wörter)*  
+   - Mode, Film, TV, Jugendbewegungen, Lifestyle.  
+   - Wie Musik andere Kunstformen beeinflusste.  
+   - Crossover-Genres, Genre-Mischungen und internationale Trends.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Vermeide klassische Moderations-Floskeln oder Regieanweisungen, sondern schreibe einfach von Sprecher zu Sprecher.
+6. **Vermächtnis & heutige Relevanz** *(2 Teile à ca. 1.250 Wörter)*  
+   - Langfristige Wirkung auf die Musikgeschichte.  
+   - Welche Einflüsse bis heute hörbar sind.  
+   - Parallelen zu aktuellen Strömungen.  
+   - Emotionaler, herzlicher Abschluss mit direkter Ansprache an die Hörer*innen.  
+   **Gesamt: ca. 2.500 Wörter**
 
-    Jeder Themenblock soll in sich ausführlich und bildhaft sein – nicht bloß eine Aufzählung, sondern „Kino im Kopf“ erzeugen.
+---
 
-    Am Ende jedes größeren Themenblocks die aktuelle Wortzahl nennen, so dass ich weiß, wie viel schon geschrieben wurde.
+## 3️⃣ Dialogstil  
+- **Kein Frage-Antwort-Schema** – fließendes, organisches Gespräch mit Diskussionen, Anekdoten, Erinnerungen, kleinen Meinungsverschiedenheiten.  
+- Abwechslung in **Satzlänge, Rhythmus und Energie**.  
+- **Szenische Elemente**: Atmosphäre, Orte, Geräusche, Stimmungen beschreiben.  
+- **Keine Listen** – alles ausformuliert.  
+- Wortwahl lebendig, bildhaft, nah an echter Studio-Unterhaltung.
 
-    Die Sprecher wechseln nicht zu oft (maximal nach ca. 300–700 Wörtern pro Sprecher), sondern erzählen auch längere Abschnitte am Stück.
+---
 
-    Am Ende gibt es einen runden Abschluss und eine emotionale Verabschiedung beider Sprecher – nicht einfach abrupt enden, sondern das Thema „nachklingen“ lassen.
+## 4️⃣ Sprecher- und SSML-Regeln  
+- Immer im Format:  
+```
+name: <speak><speechify:style emotion="...">Text…</speechify:style></speak>
+```
+- **Jede Sprecherzeile einzeln taggen** – keine umschließenden SSML-Blöcke.  
+- Erlaubte Emotionen: cheerful, sad, relaxed, fearful, surprised, calm, warm, bright.  
+- Erlaubte Tags zusätzlich:  
+  - `<break time="500ms"/>` oder `<break strength="medium"/>` für Pausen.  
+  - `<emphasis level="strong">` für Betonung.  
+- **Escaping** aller Sonderzeichen:  
+  - & → &amp;  
+  - > → &gt;  
+  - < → &lt;  
+  - " → &quot;  
+  - ' → &apos;  
+- Keine Lautschrift und kein `<sub>`.
 
-    Am Ende jedes größeren Themenblocks die aktuelle Wortzahl nennen.
+---
 
-Themen-Schwerpunkte:
+## 5️⃣ Emotion & Dynamik  
+- Nur **warm** verwenden.  
+- Dynamik erzeugen durch:  
+  - Satzmelodie (Abwechslung zwischen kurzen & langen Sätzen)  
+  - Pausen für Spannung  
+  - Ausrufe für Intensität  
+  - Offene Enden „…” für Nachdenklichkeit  
+- Dialoge wie Live-Gespräche wirken lassen.
 
-    Tiefe historische und gesellschaftliche Einbettung des Jahrzehnts
+---
 
-    Hinter-den-Kulissen-Geschichten berühmter Songs, Alben und Künstler
+## 6️⃣ Übergänge zwischen Themen  
+Jeder Themenwechsel muss organisch erfolgen – niemals mit „Im nächsten Kapitel …“.  
+Techniken:  
+- Rückbezug auf vorigen Satz des anderen  
+- Persönliche Erinnerung oder Anekdote  
+- Bildhafte Szene als Überleitung  
+- Emotionale Reaktion auf das Gesagte
 
-    Alltagsszenen, Mode, Technik, Filme, gesellschaftliche Konflikte
+---
 
-    Persönliche Anekdoten, emotionale Bewertungen, kleine Diskurse zwischen den Sprechern
+## 7️⃣ Wortanzahl-Kontrolle  
+- **Nach jedem Teil**: exakte Wortzahl des **reinen Dialogtexts** angeben (ohne SSML-Tags).  
+- Falls zu kurz: gezielt ergänzen. Falls zu lang: anpassen.  
+- Pro Teil: Zielwert ± max. 20 Wörter.
 
-Format:
+---
 
-    Beispiel:
-    daniel: (Begrüßung, Einstieg, erste Erinnerungen, persönliche Szene, Erzählung, Song-/Albumtipps, Alltag, Geschichte, Reflexion, mehrere Absätze)
-    annabelle: (eigene Begrüßung, Einstieg ins Thema, weitere Erinnerungen, Anekdoten, eigene Song-/Albumtipps, gesellschaftlicher Kontext, Atmosphäre, Szene, Emotionen, mehrere Absätze)
-    usw., bis zum Ende
-    daniel: (Abschluss, letzte Gedanken, Fazit, persönliche Note)
-    annabelle: (letzte Gedanken, emotionale Verabschiedung)
-    
-    Keine Regieanweisungen, keine Musikhinweise, keine Kapitelüberschriften, nur der Wechsel zwischen den beiden Sprechern.
+## 8️⃣ Jahrzehnte-spezifische Spezifika  
+- Historische Genauigkeit beachten (Jahreszahlen, gesellschaftliche Ereignisse).  
+- Verknüpfung von Musik, Politik, Mode, Technik und Alltag.  
+- Einbau von typischen Klangbildern und ikonischen Momenten.  
+- Gesellschaftliche Wirkung der Musik hervorheben.
 
-    Der gesamte Dialog soll für 60 Minuten Audio reichen (ca. 7.000–8.000 Wörter), gerne auch mehr.
+---
 
-Thema für den Podcast: [hier dein Thema, z.B. „Die Musik der 1950er Jahre“]
+## 9️⃣ Beispielanfang  
+```
+daniel: <speak><speechify:style emotion="warm">Willkommen zu einer neuen Folge von Melody Mind! Heute reisen wir gemeinsam zurück in die neunzehnhundertfünfziger Jahre – eine Zeit voller Aufbruch, Umbrüche und unvergesslicher Musik.</speechify:style></speak>
 
-Du kannst nach jedem Themenblock einfach „weiter“ schreiben lassen, damit das Skript stufenweise entsteht und du jederzeit Feedback geben oder Schwerpunkte setzen kannst.
+annabelle: <speak><speechify:style emotion="warm">Ja, Daniel, und ich sehe sofort die Bilder vor mir: Teenager, die zum ersten Mal Rock &amp; Roll tanzen, Familien um das neue Fernsehgerät versammelt, und im Radio laufen die neuesten Hits.</speechify:style></speak>
+```
+
+Bitte immer die Kapitelstruktur dem gewünschten thema anpassen.

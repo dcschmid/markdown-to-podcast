@@ -1,70 +1,133 @@
-Erstelle ein Podcastskript mit mindestens 60 Minuten Sprechzeit (7.000–8.000 Wörter), vollständig als Dialog zwischen zwei Personen (z.B. Daniel und Annabelle).
-Das Thema ist Musik aus einem bestimmten Land oder einer Region: [z.B. Argentinian, Austrian, Belgian, Brazilian].
-Der Dialog soll wirken wie ein echtes, tiefes Gespräch, kein bloßes Frage-Antwort-Spiel.
-Der Dialog muss immer so formatiert sein, dass der Sprechername am Anfang steht, dann ein Doppelpunkt, dann der vollständige Text des Sprechers in derselben Zeile.
-Zum Beispiel:
-daniel: Das war der Soundtrack einer ganzen Generation – voller Hoffnung, Aufbruch und Sehnsucht.
-annabelle: Und genau das hört man auch heute noch, wenn man die alten Songs auflegt.
+Abendfüllendes Podcastskript: Die Musik der 1950er Jahre
 
-Wichtige Regeln:
+Sprache
+- Hier Sprache eintragen, z.B. Deutsch, Englisch, Spanisch, Französisch, ...
 
-    Der Podcast heißt „Melody Mind“. Bitte erwähne den Namen im Einstieg (Begrüßung) und im Abschluss (Verabschiedung) so, dass es wie eine echte Podcast-Episode klingt.
 
-    Beginne mit einem persönlichen, lockeren Einstieg und einer Begrüßung durch beide Sprecher, bevor ihr ins Thema eintaucht.
+## 1️⃣ Ziel  
+Erstellung eines abendfüllenden **Melody Mind Podcastskripts** im **natürlichen Studiogespräch-Stil** zwischen **Daniel** und **Annabelle**, mit besonderem Fokus auf die Musik eines bestimmten Landes oder einer Region.  
+Gesamtumfang: **ca. 22.000–23.000 Wörter**.
 
-    Schreibe ausführliche, lange Passagen pro Sprecher (mehrere Absätze, bevor gewechselt wird).
+---
 
-    Erzähle von der musikalischen Geschichte und Entwicklung des Landes/der Region: Wurzeln, Stile, berühmte Phasen, musikalische Bewegungen.
+## 2️⃣ Kapitelstruktur & Wortverteilung  
 
-    Gehe auf gesellschaftliche und politische Hintergründe ein: Wie spielt Musik in Alltag, Protest, Feierkultur, Identität eine Rolle?
+1. **Einstieg & musikalisches Landschaftsbild des Landes** *(2 Teile à ca. 1.250 Wörter)*  
+   - Szenischer Einstieg: Geräusche, Orte, Stimmung – sofort im Land „ankommen“.  
+   - Erste emotionale Eindrücke und typische Klänge.  
+   - Warum dieses Land musikalisch besonders ist.  
+   - Organischer Übergang zu den Ursprüngen der Musik.  
+   **Gesamt: ca. 2.500 Wörter**
 
-    Nenne konkrete Künstler, Bands, Komponisten, Song- und Albentipps – und erzähle Geschichten dahinter: Entstehung, Einfluss, Medienreaktion, Skandale, internationale Wirkung.
+2. **Musikalische Wurzeln & frühe Traditionen** *(3 Teile à ca. 1.500 Wörter)*  
+   - Volksmusik, regionale Instrumente, Tanzstile.  
+   - Wie Traditionen entstanden und gepflegt wurden.  
+   - Erste dokumentierte Musikaufnahmen & historische Künstler.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Beschreibe Szene-Alltag, Fankultur, Mode, typische Locations (Clubs, Straßen, Festivals), Szene-Rituale, Sprache und Alltag.
+3. **Wegbereiter*innen & prägende Epochen** *(3 Teile à ca. 1.500 Wörter)*  
+   - Die ersten Stars und stilprägenden Persönlichkeiten.  
+   - Genre-Entstehungen und kulturelle Bewegungen.  
+   - Anekdoten zu legendären Auftritten, Touren, Studioaufnahmen.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Thematisiere regionale Eigenheiten, typische Instrumente, Tanzstile, Unterschiede zwischen Stadt/Land, Arm/Reich, Tradition/Moderne.
+4. **Gesellschaft, Alltag & Musik im Leben der Menschen** *(3 Teile à ca. 1.500 Wörter)*  
+   - Rolle der Musik bei Festen, Ritualen, Protesten, im Familienleben.  
+   - Unterschiede zwischen Stadt/Land, Arm/Reich, alt/jung.  
+   - Musik als politisches oder soziales Sprachrohr.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Ziehe Vergleiche zu anderen Ländern, anderen Jahrzehnten, anderen Musikrichtungen, und stelle Besonderheiten heraus.
+5. **Ikonische Künstler*innen, Alben & Songs** *(3 Teile à ca. 1.500 Wörter)*  
+   - Biografien und Schlüsselmomente bedeutender Musiker*innen.  
+   - Geschichten hinter Hits, Skandale, internationale Wirkung.  
+   - Einfluss auf andere Künstler und Genres.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Zeige persönliche Meinungen, emotionale Reaktionen und kleine dialogische Reibungen, damit das Gespräch lebendig und authentisch bleibt.
+6. **Kulturelle Besonderheiten, Fankultur & Szene-Leben** *(3 Teile à ca. 1.500 Wörter)*  
+   - Tanz, Mode, Sprache, regionale Eigenheiten.  
+   - Treffpunkte, Clubs, Festivals, Straßenmusik.  
+   - Szene-Rituale und Gemeinschaftsgefühl.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Das Gespräch darf abschweifen, in Erinnerungen schwelgen, in Details eintauchen, aber immer wieder zum Thema zurückfinden.
+7. **Wandel, heutige Trends & internationale Bedeutung** *(2 Teile à ca. 1.250 Wörter)*  
+   - Entwicklung über die Jahrzehnte.  
+   - Moderne Künstler*innen & aktuelle Szene.  
+   - Einfluss auf die Weltmusik.  
+   - Herzliche, persönliche Verabschiedung mit Bezug zu „Melody Mind“.  
+   **Gesamt: ca. 2.500 Wörter**
 
-    Keine Regieanweisungen, keine Musikhinweise, keine Kapitelüberschriften, nur der Sprecherwechsel.
+---
 
-    Die Sprecher wechseln nur alle 300–700 Wörter.
+## 3️⃣ Dialogstil  
+- **Kein Frage-Antwort-Schema** – fließendes, organisches Gespräch mit Diskussionen, Anekdoten, Erinnerungen, kleinen Meinungsverschiedenheiten.  
+- Abwechslung in **Satzlänge, Rhythmus und Energie**.  
+- **Szenische Elemente**: Atmosphäre, Orte, Geräusche, Stimmungen beschreiben.  
+- **Keine Listen** – alles ausformuliert.  
+- Wortwahl lebendig, bildhaft, nah an echter Studio-Unterhaltung.
 
-    Am Ende gibt es einen runden Abschluss und eine emotionale Verabschiedung beider Sprecher – nicht einfach abrupt enden, sondern das Thema „nachklingen“ lassen.
+---
 
-    Am Ende jedes größeren Themenblocks die aktuelle Wortzahl nennen.
+## 4️⃣ Sprecher- und SSML-Regeln  
+- Immer im Format:  
+```
+name: <speak><speechify:style emotion="...">Text…</speechify:style></speak>
+```
+- **Jede Sprecherzeile einzeln taggen** – keine umschließenden SSML-Blöcke.  
+- Erlaubte Emotionen: cheerful, sad, relaxed, fearful, surprised, calm, warm, bright.  
+- Erlaubte Tags zusätzlich:  
+  - `<break time="500ms"/>` oder `<break strength="medium"/>` für Pausen.  
+  - `<emphasis level="strong">` für Betonung.  
+- **Escaping** aller Sonderzeichen:  
+  - & → &amp;  
+  - > → &gt;  
+  - < → &lt;  
+  - " → &quot;  
+  - ' → &apos;  
+- Keine Lautschrift und kein `<sub>`.
 
-Themen-Schwerpunkte:
+---
 
-    Entwicklung und Wurzeln der Musik des Landes/der Region
+## 5️⃣ Emotion & Dynamik  
+- Nur **warm** verwenden.  
+- Dynamik erzeugen durch:  
+  - Satzmelodie (Abwechslung zwischen kurzen & langen Sätzen)  
+  - Pausen für Spannung  
+  - Ausrufe für Intensität  
+  - Offene Enden „…” für Nachdenklichkeit  
+- Dialoge wie Live-Gespräche wirken lassen.
 
-    Wichtigste Genres, Epochen, Szene-Entwicklungen, Trends
+---
 
-    Die großen Künstler, Bands, Komponisten und Szene-Akteure
+## 6️⃣ Übergänge zwischen Themen  
+Jeder Themenwechsel muss organisch erfolgen – niemals mit „Im nächsten Kapitel …“.  
+Techniken:  
+- Rückbezug auf vorigen Satz des anderen  
+- Persönliche Erinnerung oder Anekdote  
+- Bildhafte Szene als Überleitung  
+- Emotionale Reaktion auf das Gesagte
 
-    Song- und Albengeschichten, legendäre Auftritte, Szene-Leben, Fankultur, Mode
+---
 
-    Soziale und politische Hintergründe, Rolle der Musik im Alltag und für Identität
+## 7️⃣ Wortanzahl-Kontrolle  
+- **Nach jedem Teil**: exakte Wortzahl des **reinen Dialogtexts** angeben (ohne SSML-Tags).  
+- Falls zu kurz: gezielt ergänzen. Falls zu lang: anpassen.  
+- Pro Teil: Zielwert ± max. 20 Wörter.
 
-    Einfluss auf andere Länder, internationale Wirkung, Besonderheiten
+---
 
-    Persönliche Anekdoten, emotionale Bewertungen, Diskurse zwischen den Sprechern
+## 8️⃣ Länder-spezifische Spezifika  
+- Historische Genauigkeit beachten (Jahreszahlen, gesellschaftliche Ereignisse).  
+- Verknüpfung von Musik, Politik, Sprache, Tanz, Mode, regionalen Traditionen.  
+- Einbau von typischen Klangbildern und ikonischen Momenten.  
+- Gesellschaftliche Wirkung der Musik hervorheben.
 
-Format:
+---
 
-   Beispiel:
-    daniel: (Begrüßung, Einstieg, erste Erinnerungen, persönliche Szene, Erzählung, Song-/Albumtipps, Alltag, Geschichte, Reflexion, mehrere Absätze)
-    annabelle: (eigene Begrüßung, Einstieg ins Thema, weitere Erinnerungen, Anekdoten, eigene Song-/Albumtipps, gesellschaftlicher Kontext, Atmosphäre, Szene, Emotionen, mehrere Absätze)
-    usw., bis zum Ende
-    daniel: (Abschluss, letzte Gedanken, Fazit, persönliche Note)
-    annabelle: (letzte Gedanken, emotionale Verabschiedung)
+## 9️⃣ Beispielanfang  
+```
+daniel: <speak><speechify:style emotion="warm">Willkommen zu einer neuen Folge von Melody Mind! Heute entführen wir euch in die Klangwelten von Brasilien – voller Farben, Rhythmen und Geschichten, die man nicht nur hört, sondern fühlt.</speechify:style></speak>
 
-    Der gesamte Dialog reicht für 60 Minuten Audio (7.000–8.000 Wörter).
+annabelle: <speak><speechify:style emotion="warm">Ja, Daniel, und schon beim ersten Akkord einer Samba-Gitarre oder den Trommeln eines Karnevalsumzugs spürt man diese Energie, die so einzigartig brasilianisch ist.</speechify:style></speak>
+```
 
-Thema für den Podcast: [z.B. „Brazilian Music – Von Samba und Bossa Nova bis Funk Carioca“, „Belgian Pop und Elektronik“, „Austrian Classics & Moderne“, „Musik aus Argentinien: Tango, Rock Nacional, Folklore und mehr“]
-
-Du kannst nach jedem Themenblock einfach „weiter“ schreiben lassen, damit das Skript Schritt für Schritt entsteht und du jederzeit nachsteuern oder Feedback geben kannst.
+Bitte immer die Kapitelstruktur dem gewünschten thema anpassen.

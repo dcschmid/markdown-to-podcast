@@ -1,68 +1,126 @@
-Erstelle ein Podcastskript mit mindestens 60 Minuten Sprechzeit (7.000–8.000 Wörter), vollständig als Dialog zwischen zwei Personen (z.B. Daniel und Annabelle).
-Das Thema ist ein situatives oder aktivitätsbasiertes Musikgenre: [z.B. Disco Fever, Party On!, Rainy Day, Road Trip].
-Der Dialog soll wie ein echtes, erzählendes Gespräch wirken – kein Frage-Antwort-Spiel, sondern lange Passagen mit echten Geschichten, Szenen, Ritualen, Erinnerungen, Atmosphäre, Hintergrundwissen.
-Der Dialog muss immer so formatiert sein, dass der Sprechername am Anfang steht, dann ein Doppelpunkt, dann der vollständige Text des Sprechers in derselben Zeile.
-Zum Beispiel:
-daniel: Das war der Soundtrack einer ganzen Generation – voller Hoffnung, Aufbruch und Sehnsucht.
-annabelle: Und genau das hört man auch heute noch, wenn man die alten Songs auflegt.
+Abendfüllendes Podcastskript: Die Musik der 1950er Jahre
 
-Wichtige Regeln:
+Sprache
+- Hier Sprache eintragen, z.B. Deutsch, Englisch, Spanisch, Französisch, ...
 
-    Der Podcast heißt „Melody Mind“. Bitte erwähne den Namen im Einstieg (Begrüßung) und im Abschluss (Verabschiedung) so, dass es wie eine echte Podcast-Episode klingt.
 
-    Beginne mit einem persönlichen, lockeren Einstieg und einer Begrüßung durch beide Sprecher, bevor ihr ins Thema eintaucht.
+## 1️⃣ Ziel  
 
-    Schreibe ausführliche, lange Passagen pro Sprecher (mehrere Absätze, bevor gewechselt wird).
+Erstellung eines abendfüllenden **Melody Mind Podcastskripts** im **natürlichen Studiogespräch-Stil** zwischen **Daniel** und **Annabelle**, mit besonderem Fokus auf die Musik eines bestimmten Landes oder einer Region.  
+Gesamtumfang: **ca. 22.000–23.000 Wörter**.
 
-    Erzähle von typischen Settings, Alltagsmomenten, Aktivitäten, Stimmungen und wie Musik diese Situationen verwandelt.
+---
 
-    Nenne konkrete Songs, Alben, Künstler, Kult-Playlists – erzähle ihre Geschichten, warum sie für dieses Setting stehen, wie sie gehört/erlebt werden.
+## 2️⃣ Kapitelstruktur & Wortverteilung  
 
-    Baue echte Szenen ein: Wer hört diese Musik, wann, wo, mit wem, in welchem Lebensmoment? Welche Rituale, Erinnerungen, Geschichten gibt es?
+**1. Einstieg & Setting (ca. 3.000 Wörter – 2 Teile à 1.500 Wörter)**
+- Persönliche Begrüßung im „Melody Mind“-Stil
+- Beschreibung der Situation (z.B. Roadtrip, Party, Regentag)
+- Erste Assoziationen, Bilder, Gefühle
+- Wie Musik das Setting prägt
 
-    Gehe auf Atmosphäre, Licht, Wetter, Orte, Mode, Bewegungen, Popkultur, Medien, Tanz, Werbung ein – alles, was die Situation noch greifbarer macht.
+**2. Typische Sounds & Stimmungen (ca. 4.500 Wörter – 3 Teile à 1.500 Wörter)**
+- Passende Genres, Instrumente, Arrangements
+- Klanglandschaften und typische Stimmungen
+- Unterschiede zwischen Tag/Nacht, Indoor/Outdoor
+- Beispiele aus verschiedenen Jahrzehnten und Kulturen
 
-    Erzähle von Veränderungen, Trends, neuen Techniken (z.B. Streaming, DJ-Sets, TikTok-Challenges, Nostalgiewellen).
+**3. Alltagsszenen & Rituale (ca. 4.500 Wörter – 3 Teile à 1.500 Wörter)**
+- Musik in typischen Situationen (Feste, Reisen, Freizeit)
+- Rituale und Szenenbeschreibungen
+- Unterschiedliche Generationserfahrungen
+- Wie Musik Momente verstärkt oder verändert
 
-    Ziehe Querverweise auf Generationen, Länder, regionale Unterschiede, Szene-Leben.
+**4. Ikonische Songs, Alben & Künstler (ca. 4.500 Wörter – 3 Teile à 1.500 Wörter)**
+- Die Hymnen und Klassiker für das Setting
+- Künstlerbiografien mit Bezug zur Situation
+- Songentstehung, Rezeption, kulturelle Bedeutung
+- Internationale Vergleiche
 
-    Streue persönliche Meinungen, emotionale Bewertungen, kleine Dialoge und Diskurse ein – der Dialog soll lebendig, nah und authentisch wirken.
+**5. Popkultur, Medien & Trends (ca. 4.500 Wörter – 3 Teile à 1.500 Wörter)**
+- Darstellung in Filmen, Serien, Werbung
+- Verbindung zu Mode, Tanz, Lifestyle
+- Social Media Trends und virale Momente
+- Wie sich das Setting in der Popkultur spiegelt
 
-    Das Gespräch darf abschweifen, in Erinnerungen schwelgen, aus dem Alltag oder Medien zitieren und dann wieder zurück zum Thema finden.
+**6. Wandel & Ausblick (ca. 4.500 Wörter – 3 Teile à 1.500 Wörter)**
+- Veränderungen in der Musikwahrnehmung für das Setting
+- Technologische Einflüsse, Streaming, globale Playlists
+- Welche Trends bleiben, welche verschwinden
+- Zukunftsausblick für das situative Musikgenre
 
-    Keine Regieanweisungen, keine Kapitelüberschriften, nur der Sprecherwechsel.
+--
 
-    Am Ende gibt es einen runden Abschluss und eine emotionale Verabschiedung beider Sprecher – nicht einfach abrupt enden, sondern das Thema „nachklingen“ lassen.
+## 3️⃣ Dialogstil  
+- **Kein Frage-Antwort-Schema** – fließendes, organisches Gespräch mit Diskussionen, Anekdoten, Erinnerungen, kleinen Meinungsverschiedenheiten.  
+- Abwechslung in **Satzlänge, Rhythmus und Energie**.  
+- **Szenische Elemente**: Atmosphäre, Orte, Geräusche, Stimmungen beschreiben.  
+- **Keine Listen** – alles ausformuliert.  
+- Wortwahl lebendig, bildhaft, nah an echter Studio-Unterhaltung.
 
-    Die Sprecher wechseln nur alle 300–700 Wörter.
+---
 
-    Am Ende jedes großen Themenblocks die aktuelle Wortzahl nennen.
+## 4️⃣ Sprecher- und SSML-Regeln  
+- Immer im Format:  
+```
+name: <speak><speechify:style emotion="...">Text…</speechify:style></speak>
+```
+- **Jede Sprecherzeile einzeln taggen** – keine umschließenden SSML-Blöcke.  
+- Erlaubte Emotionen: cheerful, sad, relaxed, fearful, surprised, calm, warm, bright.  
+- Erlaubte Tags zusätzlich:  
+  - `<break time="500ms"/>` oder `<break strength="medium"/>` für Pausen.  
+  - `<emphasis level="strong">` für Betonung.  
+- **Escaping** aller Sonderzeichen:  
+  - & → &amp;  
+  - > → &gt;  
+  - < → &lt;  
+  - " → &quot;  
+  - ' → &apos;  
+- Keine Lautschrift und kein `<sub>`.
 
-Themen-Schwerpunkte:
+---
 
-    Typische Settings, Situationen, Tageszeiten, Aktivitäten, Stimmung
+## 5️⃣ Emotion & Dynamik  
+- Nur **warm** verwenden.  
+- Dynamik erzeugen durch:  
+  - Satzmelodie (Abwechslung zwischen kurzen & langen Sätzen)  
+  - Pausen für Spannung  
+  - Ausrufe für Intensität  
+  - Offene Enden „…” für Nachdenklichkeit  
+- Dialoge wie Live-Gespräche wirken lassen.
 
-    Die großen Hits, Playlists, Künstler, Alben, Hymnen, Kult-Tracks
+---
 
-    Alltagsszenen, Feiern, Roadtrips, Regenmomente, After-Work, Hauspartys, Clubnächte, Allein- oder Gruppen-Erlebnisse
+## 6️⃣ Übergänge zwischen Themen  
+Jeder Themenwechsel muss organisch erfolgen – niemals mit „Im nächsten Kapitel …“.  
+Techniken:  
+- Rückbezug auf vorigen Satz des anderen  
+- Persönliche Erinnerung oder Anekdote  
+- Bildhafte Szene als Überleitung  
+- Emotionale Reaktion auf das Gesagte
 
-    Popkultur, Medien, Filme, Werbung, Szene-Treffpunkte, Trends
+---
 
-    Regionale/kulturelle Unterschiede, Generationen, Wandel
+## 7️⃣ Wortanzahl-Kontrolle  
+- **Nach jedem Teil**: exakte Wortzahl des **reinen Dialogtexts** angeben (ohne SSML-Tags).  
+- Falls zu kurz: gezielt ergänzen. Falls zu lang: anpassen.  
+- Pro Teil: Zielwert ± max. 20 Wörter.
 
-    Persönliche Erinnerungen, Anekdoten, emotionale Momente, Diskurse
+---
 
-Format:
+## 8️⃣ Länder-spezifische Spezifika  
+- Historische Genauigkeit beachten (Jahreszahlen, gesellschaftliche Ereignisse).  
+- Verknüpfung von Musik, Politik, Sprache, Tanz, Mode, regionalen Traditionen.  
+- Einbau von typischen Klangbildern und ikonischen Momenten.  
+- Gesellschaftliche Wirkung der Musik hervorheben.
 
-    Beispiel:
-    daniel: (Begrüßung, Einstieg, erste Erinnerungen, persönliche Szene, Erzählung, Song-/Albumtipps, Alltag, Geschichte, Reflexion, mehrere Absätze)
-    annabelle: (eigene Begrüßung, Einstieg ins Thema, weitere Erinnerungen, Anekdoten, eigene Song-/Albumtipps, gesellschaftlicher Kontext, Atmosphäre, Szene, Emotionen, mehrere Absätze)
-    usw., bis zum Ende
-    daniel: (Abschluss, letzte Gedanken, Fazit, persönliche Note)
-    annabelle: (letzte Gedanken, emotionale Verabschiedung)
+---
 
-    Der gesamte Dialog reicht für 60 Minuten Audio (7.000–8.000 Wörter).
+## 9️⃣ Beispielanfang  
+```
+daniel: <speak><speechify:style emotion="warm">Willkommen zu einer neuen Folge von Melody Mind! Heute entführen wir euch in die Klangwelten von Brasilien – voller Farben, Rhythmen und Geschichten, die man nicht nur hört, sondern fühlt.</speechify:style></speak>
 
-Thema für den Podcast: [z.B. „Disco Fever – Nächte voller Glitzer und Groove“, „Party On! – Der Soundtrack für die besten Feiern“, „Rainy Day – Musik für Regentage und Melancholie“, „Road Trip – Der Soundtrack für unterwegs“]
+annabelle: <speak><speechify:style emotion="warm">Ja, Daniel, und schon beim ersten Akkord einer Samba-Gitarre oder den Trommeln eines Karnevalsumzugs spürt man diese Energie, die so einzigartig brasilianisch ist.</speechify:style></speak>
+```
 
-Du kannst nach jedem Themenblock einfach „weiter“ schreiben lassen, damit das Skript Stück für Stück entsteht und du jederzeit anpassen oder Feedback geben kannst.
+Bitte immer die Kapitelstruktur dem gewünschten thema anpassen.

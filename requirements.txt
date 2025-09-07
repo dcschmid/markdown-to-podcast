@@ -10,8 +10,16 @@ pydub>=0.25.1
 # Audio Processing Support (Python 3.13 compatibility)
 audioop-lts>=0.2.1
 
+# Video and Image Processing
+moviepy>=1.0.3
+Pillow>=10.0.0
+
 # Scientific Computing
 numpy>=1.24.0
+
+# Audio Analysis and Processing
+librosa>=0.10.1
+soundfile>=0.12.1
 
 # Environment Variables (.env Support)
 python-dotenv>=1.0.0

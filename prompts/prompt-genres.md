@@ -1,75 +1,145 @@
-Erstelle ein Podcastskript mit mindestens 60 Minuten Sprechzeit (7.000–8.000 Wörter), vollständig als Dialog zwischen zwei Personen (z.B. Daniel und Annabelle).
-Der Stil soll sich anfühlen wie ein echtes Gespräch und kein bloßes Frage-Antwort-Spiel sein.
-Das Thema ist diesmal ein Musikgenre: [hier Genre, z.B. „Hard Rock“].
-Der Dialog muss immer so formatiert sein, dass der Sprechername am Anfang steht, dann ein Doppelpunkt, dann der vollständige Text des Sprechers in derselben Zeile.
-Zum Beispiel:
-daniel: Das war der Soundtrack einer ganzen Generation – voller Hoffnung, Aufbruch und Sehnsucht.
-annabelle: Und genau das hört man auch heute noch, wenn man die alten Songs auflegt.
+Abendfüllendes Podcastskript: Die Musik der 1950er Jahre
 
-Wichtige Regeln:
+Sprache
+- Hier Sprache eintragen, z.B. Deutsch, Englisch, Spanisch, Französisch, ...
 
-    Der Podcast heißt „Melody Mind“. Bitte erwähne den Namen im Einstieg (Begrüßung) und im Abschluss (Verabschiedung) so, dass es wie eine echte Podcast-Episode klingt.
 
-    Beginne mit einem persönlichen, lockeren Einstieg und einer Begrüßung durch beide Sprecher, bevor ihr ins Thema eintaucht.
+## 1️⃣ Ziel  
 
-    Schreibe lange, ausführliche Passagen pro Sprecher (also mehrere Absätze am Stück, bevor der andere übernimmt), so dass jeder wirklich „ausreden“ darf.
+Erstellung eines abendfüllenden **Melody Mind Podcastskripts** im **natürlichen Studiogespräch-Stil** zwischen **Daniel** und **Annabelle**, mit besonderem Fokus auf die Musik eines bestimmten Landes oder einer Region.  
+Gesamtumfang: **ca. 22.000–23.000 Wörter**.
 
-    Setze auf Tiefe, erzähle Geschichten, bringe Hintergründe, Anekdoten, „Film-im-Kopf“-Erzählungen.
+## 2️⃣ Kapitelstruktur & Wortverteilung  
+*(immer themenspezifisch anpassen)*  
 
-    Nenne konkrete Album- und Songtipps, aber beschreibe auch die Entstehung, den Einfluss, die Reaktionen, Skandale, Hinter-den-Kulissen-Momente und das gesellschaftliche Drumherum zu diesen Songs/Alben.
+### 1. Einstieg & Genre-Definition (2 Teile à 1.250 Wörter → 2.500 Wörter)  
+- Persönliche, lockere Begrüßung mit Erwähnung von „Melody Mind“.  
+- Erste Gedanken, Gefühle, Klangassoziationen.  
+- Erste ikonische Künstler und Songs.  
+- Organischer Übergang in die Geschichte.  
 
-    Beschreibe Szene-Alltag, Clubs, Konzerte, Moden, Fans, Rivalitäten, Medienberichte, Klischees und Entwicklungen.
+### 2. Historische Entwicklung & Meilensteine (3 Teile à 1.500 Wörter → 4.500 Wörter)  
+- Ursprungsgeschichte, kultureller & gesellschaftlicher Kontext.  
+- Wichtige Phasen, Strömungen, Innovationen.  
+- Wendepunkte, Trends, bahnbrechende Werke.  
+- Internationale Vergleiche & Einflüsse.  
 
-    Zeige, wie das Genre in der Gesellschaft aufgenommen wurde, ob es Ausgrenzung, Aufbrüche, Trends, Skandale gab.
+### 3. Szene-Alltag & Subkulturen (3 Teile à 1.500 Wörter → 4.500 Wörter)  
+- Orte: Clubs, Festivals, Konzertsäle.  
+- Fankultur, Rituale, Symbole, Sprache.  
+- Rivalitäten, regionale Unterschiede.  
+- Anekdoten und Alltagsgeschichten.  
 
-    Ziehe immer wieder Vergleiche zu anderen Genres, Jahrzehnten, Ländern oder Szene-Traditionen.
+### 4. Ikonische Künstler, Alben & Songs (3 Teile à 1.500 Wörter → 4.500 Wörter)  
+- Bedeutende Persönlichkeiten.  
+- Geschichten hinter legendären Werken.  
+- Einfluss auf Szene, Gesellschaft und andere Genres.  
+- Mediale Reaktionen & kulturelle Wirkung.  
 
-    Beziehe Alltagsszenen, Mode, Technik, Filme, Kulturtrends und Details mit ein – das Genre soll als echtes Lebensgefühl spürbar werden.
+### 5. Popkultur, Mode & Medien (3 Teile à 1.500 Wörter → 4.500 Wörter)  
+- Einfluss auf Mode, Tanz, Filme, Werbung, Sprache.  
+- Ikonische Popkultur-Momente.  
+- Medien & Vermarktung.  
+- Popkulturelle Mythen und Klischees.  
 
-    Zeige persönliche Meinungen, emotionale Reaktionen und kleine dialogische Reibungen, sodass der Dialog lebendig und authentisch wirkt.
+### 6. Gesellschaftliche Wirkung, Wandel & Ausblick (2 Teile à 1.250 Wörter → 2.500 Wörter)  
+- Politische & gesellschaftliche Debatten.  
+- Wandel durch Technik, Globalisierung, Streaming.  
+- Ausblick: Zukunft des Genres.  
+- Emotionale, persönliche Verabschiedung mit Bezug zu „Melody Mind“.  
 
-    Das Gespräch darf immer wieder abschweifen, in Erinnerungen schwelgen und dann wieder zurück zum Genre finden – Hauptsache, es entsteht ein echter Fluss und Sog.
+---
 
-    Vermeide klassische Moderations-Floskeln oder Regieanweisungen, sondern schreibe einfach von Sprecher zu Sprecher.
+## 3️⃣ Dialogstil  
+- **Kein Frage-Antwort-Schema**, sondern organisches Gespräch.  
+- Abwechslung in **Satzlänge, Rhythmus & Energie**.  
+- **Szenische Elemente**: Atmosphäre, Geräusche, Orte.  
+- **Keine Listen**, alles in ausformuliertem Dialog.  
+- Leichte Meinungsunterschiede für Dynamik.  
 
-    Jeder Themenblock soll in sich ausführlich und bildhaft sein – nicht bloß eine Aufzählung, sondern „Kino im Kopf“ erzeugen.
+---
 
-    Am Ende jedes größeren Themenblocks die aktuelle Wortzahl nennen, so dass ich weiß, wie viel schon geschrieben wurde.
+## 4️⃣ Sprecher- und SSML-Regeln  
+- Format pro Sprecherzeile:  
+```
+name: <speak><speechify:style emotion="...">Text…</speechify:style></speak>
+```
+- **Jede Zeile einzeln taggen** – keine umschließenden Blöcke.  
+- **Erlaubte Emotionen (kontextbezogen einsetzen):**  
+  - cheerful → wenn etwas heiter, verspielt oder voller Freude ist  
+  - sad → bei melancholischen Rückblicken oder tragischen Geschichten  
+  - relaxed → in ruhig-fließenden Beschreibungen  
+  - fearful → bei Konflikten, Krisen oder gesellschaftlichen Bedrohungen  
+  - surprised → bei Wendepunkten, Unerwartetem  
+  - calm → bei sachlichen Erklärungen, geschichtlichen Abschnitten  
+  - warm → für freundliche, verbindende Passagen  
+  - bright → bei inspirierenden oder hoffnungsvollen Momenten  
 
-    Die Sprecher wechseln nicht zu oft (maximal nach ca. 300–700 Wörtern pro Sprecher), sondern erzählen auch längere Abschnitte am Stück.
-    
-    Am Ende gibt es einen runden Abschluss und eine emotionale Verabschiedung beider Sprecher – nicht einfach abrupt enden, sondern das Thema „nachklingen“ lassen.
+---
 
-Themen-Schwerpunkte:
+## 5️⃣ Break-Tag (Pausen)  
+Das `<break>`-Tag steuert Pausen zwischen Worten.  
+Beispiele:  
+```xml
+<speak>
+    Sometimes it can be useful to add a longer pause at the end of the sentence.
+    <break strength="medium" />
+    Or <break time="100ms" /> sometimes in the <break time="1s" /> middle.
+</speak>
+```
 
-    Entwicklung, Wurzeln und wichtigste Etappen des Genres
+**Parameter:**  
+- `strength` *(string)* – spezifiziert die Stärke der Pause  
+  - none → 0ms  
+  - x-weak → 250ms  
+  - weak → 500ms  
+  - medium → 750ms  
+  - strong → 1000ms  
+  - x-strong → 1250ms  
 
-    Die großen Künstler, Bands, Produzenten, Labels und Szenen
+- `time` *(string)* – spezifiziert Dauer (0–10 Sekunden)  
+  - Millisekunden: `100ms`  
+  - Sekunden: `1s`  
+---
 
-    Klassiker-Alben, Kultsongs und ihre Geschichten
+## 7️⃣ Emotion & Dynamik  
+- Emotionen **immer kontextbezogen** auswählen, nicht nur *warm*.  
+- Dynamik erzeugen durch:  
+  - Mischung aus kurzen & langen Sätzen  
+  - Pausen für Spannung  
+  - Ausrufe für Intensität  
+  - Offene Enden „...” für Nachdenklichkeit  
+- Dialog soll wie **echtes Live-Gespräch** wirken.  
 
-    Alltag der Fans: Kleidung, Treffpunkte, Sprache, Rituale, Rebellion
+---
 
-    Szene-Kultur: Konzerte, Subkulturen, Medien, Filme, Ikonen
+## 8️⃣ Übergänge zwischen Themen  
+- Organisch, niemals „Im nächsten Kapitel …”.  
+- Methoden:  
+  - Rückbezug auf Vorhergesagtes  
+  - Persönliche Anekdote  
+  - Bildhafte Szene  
+  - Emotionale Reaktion  
 
-    Soziale, politische und kulturelle Auswirkungen
+---
 
-    Wie verändert sich das Genre im Lauf der Zeit? Welche Trends und Rückschläge?
+## 9️⃣ Wortanzahl-Kontrolle  
+- **Nach jedem Teil** exakte Wortanzahl des **Dialogtexts** (ohne SSML) angeben.  
+- Zielwert pro Teil: ± max. 20 Wörter.  
 
-    Persönliche Anekdoten, emotionale Bewertungen, kleine Diskurse zwischen den Sprechern
+---
 
-Format:
+## 🔟 Länder- oder genrespezifische Genauigkeit  
+- Historische Fakten korrekt einbauen.  
+- Politische, kulturelle & gesellschaftliche Kontexte berücksichtigen.  
+- Verknüpfung mit Tanz, Mode, Sprache, regionalen Traditionen.  
+- Wirkung der Musik auf Gesellschaft hervorheben.  
 
-    Beispiel:
-    daniel: (Begrüßung, Einstieg, erste Erinnerungen, persönliche Szene, Erzählung, Song-/Albumtipps, Alltag, Geschichte, Reflexion, mehrere Absätze)
-    annabelle: (eigene Begrüßung, Einstieg ins Thema, weitere Erinnerungen, Anekdoten, eigene Song-/Albumtipps, gesellschaftlicher Kontext, Atmosphäre, Szene, Emotionen, mehrere Absätze)
-    usw., bis zum Ende
-    daniel: (Abschluss, letzte Gedanken, Fazit, persönliche Note)
-    annabelle: (letzte Gedanken, emotionale Verabschiedung)
-    Keine Regieanweisungen, keine Musikhinweise, keine Kapitelüberschriften, nur der Wechsel zwischen den beiden Sprechern.
+---
 
-    Der gesamte Dialog soll für 60 Minuten Audio reichen (ca. 7.000–8.000 Wörter), gerne auch mehr.
+## 1️⃣1️⃣ Beispielanfang  
+```
+daniel: <speak><speechify:style emotion="warm">Welcome to a new episode of Melody Mind! Today, we&apos;re diving into the timeless world of the piano – an instrument that has touched hearts for centuries.</speechify:style></speak>
 
-Thema für den Podcast: [z.B. „Hard Rock – Von den Wurzeln bis heute“]
-
-Du kannst nach jedem Themenblock einfach „weiter“ schreiben lassen, damit das Skript stufenweise entsteht und du jederzeit Feedback geben oder Schwerpunkte setzen kannst.
+annabelle: <speak><speechify:style emotion="bright">Yes, Daniel, the very first note of a piano can feel like opening a door into another universe of emotions and colors.</speechify:style></speak>
+```

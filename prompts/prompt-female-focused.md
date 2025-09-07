@@ -1,77 +1,151 @@
-Prompt für ausführliche Podcastskripte zu Female-Focused Musik-Kategorien (60+ Minuten, 7.000–8.000 Wörter)
+# Female-Focused Podcastskript: [Thema einfügen]
 
-Erstelle ein Podcastskript mit mindestens 60 Minuten Sprechzeit (7.000–8.000 Wörter), vollständig als Dialog zwischen zwei Personen (z.B. Daniel und Annabelle).
-Das Thema ist eine female-focused Musik-Kategorie: [z.B. „Female Vocal Icons“ oder „Female Rock/Metal Vocalists“].
-Der Dialog soll wirken wie ein echtes, tiefes Gespräch, kein bloßes Frage-Antwort-Spiel.
-Der Dialog muss immer so formatiert sein, dass der Sprechername am Anfang steht, dann ein Doppelpunkt, dann der vollständige Text des Sprechers in derselben Zeile.
-Zum Beispiel:
-daniel: Das war der Soundtrack einer ganzen Generation – voller Hoffnung, Aufbruch und Sehnsucht.
-annabelle: Und genau das hört man auch heute noch, wenn man die alten Songs auflegt.
+Sprache
+- Hier Sprache eintragen, z.B. Deutsch, Englisch, Spanisch, Französisch, ...
 
-Wichtige Regeln:
+## 1️⃣ Ziel  
+Erstellung eines abendfüllenden **Female-Focused Melody Mind Podcastskripts** im **natürlichen Studiogespräch-Stil** zwischen **Daniel** und **Annabelle**, mit besonderem Fokus auf **weibliche Künstlerinnen** eines bestimmten Musikgenres oder einer Epoche.  
+Gesamtumfang: **ca. 22.000–23.000 Wörter**.
 
-    Der Podcast heißt „Melody Mind“. Bitte erwähne den Namen im Einstieg (Begrüßung) und im Abschluss (Verabschiedung) so, dass es wie eine echte Podcast-Episode klingt.
-    
-    Beginne mit einem persönlichen, lockeren Einstieg und einer Begrüßung durch beide Sprecher, bevor ihr ins Thema eintaucht.
+---
 
-    Schreibe ausführliche, lange Passagen pro Sprecher (mehrere Absätze, bevor gewechselt wird).
+## 2️⃣ Kapitelstruktur & Wortverteilung (erweiterte Dramaturgie & Länge)  
 
-    Gehe besonders tief auf die Rolle, Bedeutung und Wirkung von Frauen im jeweiligen Musikbereich ein: Entwicklung, Herausforderungen, Pionierinnen, Vorbilder, Ikonen.
+1. **Einstieg & erste Begegnung mit dem weiblichen Blues** *(2 Teile à ca. 1.250 Wörter)*  
+   - Szenischer, emotionaler Einstieg (Konzert, Studio, Straßenszene).  
+   - Erste prägende Künstlerinnen und persönliche Eindrücke.  
+   - Atmosphäre schaffen, um die Hörer*innen sofort hineinzuziehen.  
+   - Organischer Übergang zu den ersten historischen Figuren.  
+   **Gesamt: ca. 2.500 Wörter**
 
-    Erzähle echte Geschichten, bringe Hintergründe, persönliche Anekdoten, „Film-im-Kopf“-Erzählungen und emotionale Momente ein.
+2. **Frühe Pionierinnen & Geburtsjahre** *(3 Teile à ca. 1.500 Wörter)*  
+   - Biografien und Lebenswege der ersten weiblichen Blues-Stars.  
+   - Erste Erfolge, musikalische Visionen, gesellschaftlicher Kontext.  
+   - Persönliche Anekdoten und historische Fakten mischen.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Nenne konkrete Künstlerinnen, Bands, Alben und Songs – und beschreibe ihre Entstehung, Reaktionen, ihren Einfluss auf Szene und Gesellschaft, ihre Live-Auftritte, Image und Außendarstellung.
+3. **Musikalische Revolutionen & Technik** *(3 Teile à ca. 1.500 Wörter)*  
+   - Stilprägende Sounds und Arrangements.  
+   - Aufnahmetechniken, Studioarbeit, Instrumentierung.  
+   - Internationale Einflüsse und kreative Brüche.  
+   - Künstlerinnen, die den Sound veränderten.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Thematisiere auch Widerstände, Diskriminierung, gesellschaftliche Vorurteile – und wie Künstlerinnen sie überwinden.
+4. **Kämpfe, Alltag & gesellschaftlicher Wandel** *(3 Teile à ca. 1.500 Wörter)*  
+   - Diskriminierung, Vorurteile, Ungleichheit.  
+   - Politische & soziale Umbrüche im Songtext.  
+   - Touralltag, Studioleben, solidarische Netzwerke.  
+   - Mutige Auftritte, Protestlieder.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Zeige, wie sich Szene-Alltag, Mode, Medien, Fankultur und Identitätsbildung durch diese Künstlerinnen verändern.
+5. **Popkultur & Crossover-Einflüsse** *(3 Teile à ca. 1.500 Wörter)*  
+   - Einfluss auf Mode, Film, Kunst, Jugendbewegungen, Medien.  
+   - Genre-Mischungen und Zusammenarbeit mit Künstlern anderer Stile.  
+   - Nachhaltige Wirkung auf die Mainstream-Kultur.  
+   **Gesamt: ca. 4.500 Wörter**
 
-    Vergleiche mit männlichen Vorbildern, anderen Ländern, Jahrzehnten, Stilen.
+6. **Vermächtnis, heutige Bedeutung & Zukunftsausblick** *(2 Teile à ca. 1.250 Wörter)*  
+   - Verbindung zwischen Pionierinnen und heutigen Künstlerinnen.  
+   - Spuren in moderner Produktion und Bühnenästhetik.  
+   - Prognose: Wohin entwickelt sich der weibliche Blues in den nächsten 10–20 Jahren?  
+   - Herzliche, persönliche Verabschiedung.  
+   **Gesamt: ca. 2.500 Wörter**
 
-    Zeige, wie weibliche Artists Trends geprägt oder gebrochen haben, und wie ihr Erbe heute weiterlebt.
+---
 
-    Streue persönliche Meinungen, emotionale Bewertungen und kleine Dialoge ein, damit es authentisch und lebendig wirkt.
+## 3️⃣ Dialogstil  
+- **Kein Frage-Antwort-Schema** – fließendes, organisches Gespräch mit Diskussionen, Anekdoten, Erinnerungen, kleinen Meinungsverschiedenheiten.  
+- Abwechslung in **Satzlänge, Rhythmus und Energie**.  
+- **Szenische Elemente**: Atmosphäre, Orte, Geräusche, Stimmungen beschreiben.  
+- **Keine Listen** – alles ausformuliert.  
+- Wortwahl lebendig, bildhaft, nah an echter Studio-Unterhaltung.
 
-    Das Gespräch darf abschweifen, Erinnerungen aufgreifen, in Details und Geschichten eintauchen, aber soll immer einen echten Erzählfluss haben.
+---
 
-    Keine Regieanweisungen, keine Musikhinweise, keine Kapitelüberschriften, nur der Sprecherwechsel.
+## 4️⃣ Sprecher- und SSML-Regeln  
+- Format pro Sprecherzeile:  
+```
+name: <speak><speechify:style emotion="...">Text…</speechify:style></speak>
+```
+- **Jede Zeile einzeln taggen** – keine umschließenden Blöcke.  
+- **Erlaubte Emotionen (kontextbezogen einsetzen):**  
+  - cheerful → wenn etwas heiter, verspielt oder voller Freude ist  
+  - sad → bei melancholischen Rückblicken oder tragischen Geschichten  
+  - relaxed → in ruhig-fließenden Beschreibungen  
+  - fearful → bei Konflikten, Krisen oder gesellschaftlichen Bedrohungen  
+  - surprised → bei Wendepunkten, Unerwartetem  
+  - calm → bei sachlichen Erklärungen, geschichtlichen Abschnitten  
+  - warm → für freundliche, verbindende Passagen  
+  - bright → bei inspirierenden oder hoffnungsvollen Momenten  
 
-    Die Sprecher wechseln nur alle 300–700 Wörter.
+---
 
-    Am Ende gibt es einen runden Abschluss und eine emotionale Verabschiedung beider Sprecher – nicht einfach abrupt enden, sondern das Thema „nachklingen“ lassen.
+## 5️⃣ Break-Tag (Pausen)  
+Das `<break>`-Tag steuert Pausen zwischen Worten.  
+Beispiele:  
+```xml
+<speak>
+    Sometimes it can be useful to add a longer pause at the end of the sentence.
+    <break strength="medium" />
+    Or <break time="100ms" /> sometimes in the <break time="1s" /> middle.
+</speak>
+```
 
-    Am Ende jedes großen Themenblocks die aktuelle Wortzahl nennen.
+**Parameter:**  
+- `strength` *(string)* – spezifiziert die Stärke der Pause  
+  - none → 0ms  
+  - x-weak → 250ms  
+  - weak → 500ms  
+  - medium → 750ms  
+  - strong → 1000ms  
+  - x-strong → 1250ms  
 
-Themen-Schwerpunkte:
+- `time` *(string)* – spezifiziert Dauer (0–10 Sekunden)  
+  - Millisekunden: `100ms`  
+  - Sekunden: `1s`  
+---
 
-    Historische Entwicklung der weiblichen Stimme/die Pionierinnen
+## 7️⃣ Emotion & Dynamik  
+- Emotionen **immer kontextbezogen** auswählen, nicht nur *warm*.  
+- Dynamik erzeugen durch:  
+  - Mischung aus kurzen & langen Sätzen  
+  - Pausen für Spannung  
+  - Ausrufe für Intensität  
+  - Offene Enden „...” für Nachdenklichkeit  
+- Dialog soll wie **echtes Live-Gespräch** wirken.  
 
-    Die großen Female Icons des Genres: Biografien, Karrierewege, Skandale, Stilbrüche
+---
 
-    Konkrete Song- und Albengeschichten, Live-Momente, Medienwirkung
+## 6️⃣ Übergänge zwischen Themen  
+Jeder Themenwechsel muss organisch erfolgen – niemals mit „Im nächsten Kapitel …“.  
+Techniken:  
+- Rückbezug auf vorigen Satz des anderen  
+- Persönliche Erinnerung oder Anekdote  
+- Bildhafte Szene als Überleitung  
+- Emotionale Reaktion auf das Gesagte
 
-    Gesellschaftliche, kulturelle, politische Wirkung der Frauen im Genre
+---
 
-    Typische Alltags- und Fankultur, Szene-Leben, Stil, Identität
+## 7️⃣ Wortanzahl-Kontrolle  
+- **Nach jedem Teil**: exakte Wortzahl des **reinen Dialogtexts** angeben (ohne SSML-Tags).  
+- Falls zu kurz: gezielt ergänzen. Falls zu lang: anpassen.  
+- Pro Teil: Zielwert ± max. 20 Wörter.
 
-    Diskriminierung, Emanzipation, Empowerment – wie Musikerinnen Hindernisse überwinden
+---
 
-    Einfluss auf junge Generationen, heutige Female Artists, Trends und Wandel
+## 8️⃣ Female-Focused Spezifika  
+- Fokus auf weibliche Perspektiven und Erfahrungen in der Musikindustrie.  
+- Thematisierung von Diskriminierung, Vorurteilen und Überwindung dieser Hindernisse.  
+- Empowerment & Vorbilder für nächste Generationen.  
+- Persönliche Wirkung der Musik auf Künstlerinnen & Fans.
 
-    Persönliche Anekdoten, emotionale Bewertungen, Diskurse zwischen den Sprechern
+---
 
-Format:
+## 9️⃣ Beispielanfang  
+```
+daniel: <speak><speechify:style emotion="warm">Willkommen zu einer neuen Folge von Melody Mind! Heute nehmen wir euch mit in eine Welt voller rauer Stimmen, glühender Gitarrensaiten und Geschichten, die unter die Haut gehen – den Blues, erzählt von den Frauen, die ihn unvergesslich gemacht haben.</speechify:style></speak>
 
-    Beispiel:
-    daniel: (Begrüßung, Einstieg, erste Erinnerungen, persönliche Szene, Erzählung, Song-/Albumtipps, Alltag, Geschichte, Reflexion, mehrere Absätze)
-    annabelle: (eigene Begrüßung, Einstieg ins Thema, weitere Erinnerungen, Anekdoten, eigene Song-/Albumtipps, gesellschaftlicher Kontext, Atmosphäre, Szene, Emotionen, mehrere Absätze)
-    usw., bis zum Ende
-    daniel: (Abschluss, letzte Gedanken, Fazit, persönliche Note)
-    annabelle: (letzte Gedanken, emotionale Verabschiedung)
+annabelle: <speak><speechify:style emotion="warm">Ja, und viele von ihnen mussten sich ihren Platz hart erkämpfen. Stell dir vor, neunzehnhundertdreißig – eine Frau mit Gitarre auf der Bühne, in einer Bar voller Männer. Was sie sang, war nicht nur Musik, es war ein Statement.</speechify:style></speak>
+```
 
-    Der gesamte Dialog reicht für 60 Minuten Audio (7.000–8.000 Wörter).
-
-Thema für den Podcast: [z.B. „Female Vocal Icons – Wie Frauen die Musik revolutioniert haben“
-oder „Female Rock/Metal Vocalists – Die Königinnen der härtesten Musik“]
-
-Du kannst nach jedem Themenblock einfach „weiter“ schreiben lassen, damit das Skript Stück für Stück entsteht und du jederzeit anpassen oder Feedback geben kannst.
+Bitte immer die Kapitelstruktur dem gewünschten thema anpassen.

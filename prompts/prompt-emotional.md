@@ -1,68 +1,125 @@
-Erstelle ein Podcastskript mit mindestens 60 Minuten Sprechzeit (7.000–8.000 Wörter), vollständig als Dialog zwischen zwei Personen (z.B. Daniel und Annabelle).
-Das Thema ist ein emotionales Musikgenre: [z.B. Happy, Sad, Relaxed, Energetic].
-Der Dialog soll wirken wie ein echtes, tiefes Gespräch, kein bloßes Frage-Antwort-Spiel.
-Der Dialog muss immer so formatiert sein, dass der Sprechername am Anfang steht, dann ein Doppelpunkt, dann der vollständige Text des Sprechers in derselben Zeile.
-Zum Beispiel:
-daniel: Das war der Soundtrack einer ganzen Generation – voller Hoffnung, Aufbruch und Sehnsucht.
-annabelle: Und genau das hört man auch heute noch, wenn man die alten Songs auflegt.
+Abendfüllendes Podcastskript: Die Musik der 1950er Jahre
 
-Wichtige Regeln:
+Sprache
+- Hier Sprache eintragen, z.B. Deutsch, Englisch, Spanisch, Französisch, ...
 
-    Der Podcast heißt „Melody Mind“. Bitte erwähne den Namen im Einstieg (Begrüßung) und im Abschluss (Verabschiedung) so, dass es wie eine echte Podcast-Episode klingt.
 
-    Beginne mit einem persönlichen, lockeren Einstieg und einer Begrüßung durch beide Sprecher, bevor ihr ins Thema eintaucht.
+## 1️⃣ Ziel  
 
-    Schreibe ausführliche, lange Passagen pro Sprecher (mehrere Absätze, bevor gewechselt wird).
+Erstellung eines abendfüllenden **Melody Mind Podcastskripts** im **natürlichen Studiogespräch-Stil** zwischen **Daniel** und **Annabelle**, mit besonderem Fokus auf die Musik eines bestimmten Landes oder einer Region.  
+Gesamtumfang: **ca. 22.000–23.000 Wörter**.
 
-    Erzähle von der Klangsprache und den typischen Stilmitteln: Was macht diese Musik emotional so besonders? Welche Sounds, Instrumente, Arrangements?
+---
 
-    Nenne konkrete Künstler, Alben, Songs und ihre Geschichten – und beschreibe, wie sie dieses Gefühl transportieren, warum sie so wirken, wie sie es tun.
+## 2️⃣ Kapitelstruktur & Wortverteilung  
 
-    Baue echte Szenen und Geschichten ein: In welchen Alltagssituationen, Lebensphasen, Jahreszeiten, Orten, Kulturen taucht diese Stimmung auf?
+### 1. Einstieg & Gefühlsebene (2 Teile à 1.250 Wörter → 2.500 Wörter)
+- Persönliche, lockere Begrüßung.
+- Direkter Einstieg ins emotionale Thema – wie sich das Gefühl im Alltag und in der Musik äußert.
+- Erste Bild- und Klangassoziationen.
+- Organischer Übergang zur Klangsprache.
 
-    Beschreibe, wie das Genre auf Popkultur, Medien, Mode, Tanz, Sprache, Fankultur, Filme, Werbung usw. wirkt.
+### 2. Klangsprache & Stilmittel (3 Teile à 1.500 Wörter → 4.500 Wörter)
+- Typische Sounds, Instrumente, Arrangements.
+- Tempo, Tonarten, Harmonien und wie sie das Gefühl verstärken.
+- Beispiele aus verschiedenen Epochen und Genres.
+- Studio- und Produktionsgeheimnisse, die den „Emotions-Sound“ prägen.
 
-    Thematisiere gesellschaftliche Bedeutung: Wann brauchen wir „Happy Music“? Was macht „Sad Songs“ so wichtig? Wie helfen „Relaxed Sounds“ beim Runterkommen? Woher kommt der Wunsch nach „Energetic Beats“?
+### 3. Ikonische Songs, Alben & Künstler*innen (3 Teile à 1.500 Wörter → 4.500 Wörter)
+- Bedeutende Musiker*innen und ihre Verbindung zu diesem Gefühl.
+- Geschichten hinter Hits, Alben und deren Wirkung.
+- Internationale und kulturübergreifende Beispiele.
 
-    Ziehe immer wieder persönliche Erinnerungen, emotionale Bewertungen, Anekdoten, Rituale, kleine Dialoge ein – es soll ein echtes Gespräch über die Kraft und Wirkung der Musik entstehen.
+### 4. Alltagsszenen, Lebensphasen & Rituale (3 Teile à 1.500 Wörter → 4.500 Wörter)
+- In welchen Momenten taucht dieses Gefühl auf?
+- Musik in Ritualen, Festen, privaten Momenten.
+- Jahreszeiten, Tageszeiten, Orte – wann diese Musik besonders passt.
+- Erinnerungen und szenische Beschreibungen.
 
-    Mache Querverweise auf Genres, Epochen, regionale Unterschiede, Einflüsse anderer Künste und Gesellschaftstrends.
+### 5. Popkultur, Medien & gesellschaftliche Wirkung (3 Teile à 1.500 Wörter → 4.500 Wörter)
+- Einfluss auf Mode, Tanz, Sprache, Werbung, Film.
+- Wie Medien das Gefühl verstärken oder kommerzialisieren.
+- Bedeutung in gesellschaftlichen Debatten, Protesten, Bewegungen.
 
-    Das Gespräch darf abschweifen, in Erinnerungen oder Alltagsszenen abtauchen, dann wieder zurückfinden.
+### 6. Wandel, heutige Trends & Ausblick (2 Teile à 1.250 Wörter → 2.500 Wörter)
+- Entwicklung des Genres über die Jahre.
+- Neue Künstler*innen, digitale Plattformen, globale Vernetzung.
+- Ausblick: Wohin entwickelt sich diese Gefühlsklangwelt?
+- Emotionale, persönliche Verabschiedung mit Bezug zu „Melody Mind“.
 
-    Keine Regieanweisungen, keine Musikhinweise, keine Kapitelüberschriften, nur der Sprecherwechsel.
 
-    Die Sprecher wechseln nur alle 300–700 Wörter.
+--
 
-    Am Ende gibt es einen runden Abschluss und eine emotionale Verabschiedung beider Sprecher – nicht einfach abrupt enden, sondern das Thema „nachklingen“ lassen.
+## 3️⃣ Dialogstil  
+- **Kein Frage-Antwort-Schema** – fließendes, organisches Gespräch mit Diskussionen, Anekdoten, Erinnerungen, kleinen Meinungsverschiedenheiten.  
+- Abwechslung in **Satzlänge, Rhythmus und Energie**.  
+- **Szenische Elemente**: Atmosphäre, Orte, Geräusche, Stimmungen beschreiben.  
+- **Keine Listen** – alles ausformuliert.  
+- Wortwahl lebendig, bildhaft, nah an echter Studio-Unterhaltung.
 
-    Am Ende jedes großen Themenblocks die aktuelle Wortzahl nennen.
+---
 
-Themen-Schwerpunkte:
+## 4️⃣ Sprecher- und SSML-Regeln  
+- Immer im Format:  
+```
+name: <speak><speechify:style emotion="...">Text…</speechify:style></speak>
+```
+- **Jede Sprecherzeile einzeln taggen** – keine umschließenden SSML-Blöcke.  
+- Erlaubte Emotionen: cheerful, sad, relaxed, fearful, surprised, calm, warm, bright.  
+- Erlaubte Tags zusätzlich:  
+  - `<break time="500ms"/>` oder `<break strength="medium"/>` für Pausen.  
+  - `<emphasis level="strong">` für Betonung.  
+- **Escaping** aller Sonderzeichen:  
+  - & → &amp;  
+  - > → &gt;  
+  - < → &lt;  
+  - " → &quot;  
+  - ' → &apos;  
+- Keine Lautschrift und kein `<sub>`.
 
-    Klangsprache und typische Stilmittel dieses Emotions-Genres
+---
 
-    Wichtigste Songs, Alben, Künstler, Storys – und ihre emotionale Wirkung
+## 5️⃣ Emotion & Dynamik  
+- Nur **warm** verwenden.  
+- Dynamik erzeugen durch:  
+  - Satzmelodie (Abwechslung zwischen kurzen & langen Sätzen)  
+  - Pausen für Spannung  
+  - Ausrufe für Intensität  
+  - Offene Enden „…” für Nachdenklichkeit  
+- Dialoge wie Live-Gespräche wirken lassen.
 
-    Alltagsszenen, Fankultur, Lebensphasen, Rituale, Feiern/Verarbeiten
+---
 
-    Popkultur, Medien, Mode, Sprache, Tanz, Werbung
+## 6️⃣ Übergänge zwischen Themen  
+Jeder Themenwechsel muss organisch erfolgen – niemals mit „Im nächsten Kapitel …“.  
+Techniken:  
+- Rückbezug auf vorigen Satz des anderen  
+- Persönliche Erinnerung oder Anekdote  
+- Bildhafte Szene als Überleitung  
+- Emotionale Reaktion auf das Gesagte
 
-    Persönliche Erfahrungen, kleine Diskurse, Erinnerungen
+---
 
-    Gesellschaftliche Funktion, individuelle Bedeutung, Wirkung auf Hörer
+## 7️⃣ Wortanzahl-Kontrolle  
+- **Nach jedem Teil**: exakte Wortzahl des **reinen Dialogtexts** angeben (ohne SSML-Tags).  
+- Falls zu kurz: gezielt ergänzen. Falls zu lang: anpassen.  
+- Pro Teil: Zielwert ± max. 20 Wörter.
 
-Format:
+---
 
-    Beispiel:
-    daniel: (Begrüßung, Einstieg, erste Erinnerungen, persönliche Szene, Erzählung, Song-/Albumtipps, Alltag, Geschichte, Reflexion, mehrere Absätze)
-    annabelle: (eigene Begrüßung, Einstieg ins Thema, weitere Erinnerungen, Anekdoten, eigene Song-/Albumtipps, gesellschaftlicher Kontext, Atmosphäre, Szene, Emotionen, mehrere Absätze)
-    usw., bis zum Ende
-    daniel: (Abschluss, letzte Gedanken, Fazit, persönliche Note)
-    annabelle: (letzte Gedanken, emotionale Verabschiedung)
+## 8️⃣ Länder-spezifische Spezifika  
+- Historische Genauigkeit beachten (Jahreszahlen, gesellschaftliche Ereignisse).  
+- Verknüpfung von Musik, Politik, Sprache, Tanz, Mode, regionalen Traditionen.  
+- Einbau von typischen Klangbildern und ikonischen Momenten.  
+- Gesellschaftliche Wirkung der Musik hervorheben.
 
-    Der gesamte Dialog reicht für 60 Minuten Audio (7.000–8.000 Wörter).
+---
 
-Thema für den Podcast: [z.B. „Happy Songs – Der Soundtrack zum Glücklichsein“, „Sad Music – Warum traurige Songs uns retten können“, „Relaxed – Wie Musik die Seele streichelt“, „Energetic – Die Kraft des Beats in Musik, Tanz und Alltag“]
+## 9️⃣ Beispielanfang  
+```
+daniel: <speak><speechify:style emotion="warm">Willkommen zu einer neuen Folge von Melody Mind! Heute entführen wir euch in die Klangwelten von Brasilien – voller Farben, Rhythmen und Geschichten, die man nicht nur hört, sondern fühlt.</speechify:style></speak>
 
-Du kannst nach jedem Themenblock einfach „weiter“ schreiben lassen, damit das Skript Schritt für Schritt entsteht und du jederzeit nachsteuern oder Feedback geben kannst.
+annabelle: <speak><speechify:style emotion="warm">Ja, Daniel, und schon beim ersten Akkord einer Samba-Gitarre oder den Trommeln eines Karnevalsumzugs spürt man diese Energie, die so einzigartig brasilianisch ist.</speechify:style></speak>
+```
+
+Bitte immer die Kapitelstruktur dem gewünschten thema anpassen.
