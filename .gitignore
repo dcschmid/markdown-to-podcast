@@ -74,3 +74,5 @@ tts_models/
 
 output/
 movies/
+podcast-tts-env/
+output_chatterbox_real/

@@ -8,10 +8,9 @@ Operational guide for coding agents. Focus: deterministic, safe generation of po
 
 Goal: Markdown dialogue scripts (format `Name: Text`) → MP3 + WebVTT, optionally per‑segment WAVs and an MP4 audiogram.
 
-Primary scripts:
+Primary script:
 
 - `chatterbox_tts.py` – pipeline: parse → segment → synthesize → mux → export
-- `audiogram.py` – waveform video generator
 - `optimize_covers.py` – cover image optimization
 
 Technologies:
@@ -69,7 +68,6 @@ If FFmpeg missing: inform user (do not auto‑install).
 | Task | Datei(en) | Ziel |
 |------|-----------|------|
 | New CLI flag | `chatterbox_tts.py` | Extend function, keep backward compatible |
-| Adjust audiogram layout | `audiogram.py` | Visual/theme tweaks |
 | Add tests | `tests/` | Parsing, mapping, VTT |
 | Improve docs | `README.md`, `AGENTS.md` | Clarity & migration |
 
@@ -177,9 +175,6 @@ python chatterbox_tts.py file.md --language en --mock --output-dir out_mock
 
 # Suppress default warning suppression (show all warnings)
 python chatterbox_tts.py file.md --language en --no-suppress-warnings --output-dir out_verbose
-
-# Audiogram
-python audiogram.py --audio out/file.mp3 --cover covers/img.png --title "Episode" --subtitle "Teaser"
 ```
 
 ---

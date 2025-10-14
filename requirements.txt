@@ -1,14 +1,13 @@
-# Deutsche Podcast TTS - Speechify API Integration
-# Hochqualitative Text-zu-Sprache mit Speechify
-
-# Speechify Official SDK
-speechify-api>=1.2.0
+# Deutsche Podcast TTS - Open Source (Chatterbox) Multilingual Pipeline
+# Fokus: Markdown -> Segmente -> Chatterbox TTS -> MP3/VTT
 
 # Audio Processing für MP3/WAV Export
 pydub>=0.25.1
 
-# Audio Processing Support (Python 3.13 compatibility)
-audioop-lts>=0.2.1
+# Audio Processing Support
+# Hinweis: `audioop` ist in Python <=3.12 Teil der Standardbibliothek.
+# Das Paket `audioop-lts` ist nur für Python >=3.13 notwendig und würde
+# ältere Python-Versionen beim Installieren blockieren. Daher entfernt.
 
 # Video and Image Processing
 moviepy>=1.0.3
@@ -21,8 +20,8 @@ numpy>=1.24.0
 librosa>=0.10.1
 soundfile>=0.12.1
 
-# Environment Variables (.env Support)
 python-dotenv>=1.0.0
+requests>=2.31.0
 
 # JSON und Web-Interface Support
 flask>=2.3.0

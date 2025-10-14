@@ -9,7 +9,6 @@ The previous Speechify backend has been fully removed. No API keys, no external 
 ## Contents
 
 - `chatterbox_tts.py` – main script: Markdown → TTS (Chatterbox) → MP3 + VTT (+ optional segment WAVs)
-- `audiogram.py` – audiogram video generator
 - `podscripts/` – sample scripts
 - `utils/` – helper utilities (image optimization, categorization, etc.)
 
@@ -244,42 +243,6 @@ python chatterbox_tts.py script.md --language de ...
 
 ---
 
-## audiogram.py – create audiogram video
-
-Creates an MP4 (waveform + cover + optional subtitles) for social media.
-
-Basic example:
-
-```bash
-python audiogram.py --audio output/classic-rock.mp3 --cover covers/the-melody-mind-podcast.png --title "Episode 1" --subtitle "Classic Rock"
-```
-
-Extended example (with subtitles):
-
-```bash
-python audiogram.py \
-  --audio output/de/classic-rock/final/classic-rock.mp3 \
-  --cover covers/1980s.png \
-  --title "The Melody Mind Podcast" \
-  --subtitle "Episode 4 · The 80s" \
-  --size 1920x1080 \
-  --out movies/1980s.mp4 \
-  --subtitles output/de/classic-rock/final/classic-rock.vtt \
-  --subs_mode soft
-```
-
-Key options:
-
-- `--audio` (MP3/WAV) – required
-- `--cover` (PNG/JPG) – optional
-- `--title` / `--subtitle` – text overlays
-- `--size` – e.g. `1920x1080` or `1080x1080`
-- `--out` – output filename (default `audiogram.mp4`)
-- `--subtitles` + `--subs_mode soft|burn`
-
-FFmpeg must be installed.
-
----
 
 ## optimize_covers.py – optimize cover images
 
@@ -374,7 +337,6 @@ python chatterbox_tts.py script.md --language en --speakers "host:en_m,guest:en_
 ```text
 markdown-to-podcast/
 ├── chatterbox_tts.py        # Main TTS script
-├── audiogram.py             # Audiogram generator
 ├── optimize_covers.py       # Cover optimization
 ├── utils/                   # Helper modules
 ├── requirements.txt

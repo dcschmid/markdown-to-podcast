@@ -1,27 +1,24 @@
 #!/usr/bin/env python3
-"""
-Projekt-Status und Setup-Verifizierung
-======================================
+"""Project status & setup check (Chatterbox edition)
+====================================================
 
-Überprüft die Integrität des bereinigten TTS-Projekts.
+Verifies basic structure & dependencies for the local Chatterbox TTS pipeline.
 """
 
 import os
 import sys
 
 def check_project_structure():
-    """Überprüft die Projektstruktur"""
-    
-    print("🔍 PROJEKT-STRUKTUR ÜBERPRÜFUNG")
+    """Validate required project structure."""
+    print("🔍 PROJECT STRUCTURE CHECK")
     print("=" * 50)
     
     required_files = [
-        "speechify_official.py",
-        "requirements.txt", 
+        "chatterbox_tts.py",
+        "requirements.txt",
         "README.md",
         "LICENSE",
         ".env.example",
-        "examples/demo.md"
     ]
     
     missing_files = []
@@ -33,13 +30,13 @@ def check_project_structure():
             print(f"❌ {file_path}")
             missing_files.append(file_path)
     
-    print("\n📁 VERZEICHNISSE:")
+    print("\n📁 DIRECTORIES:")
     directories = ["examples", "output"]
     
     for directory in directories:
         if os.path.exists(directory):
             files = os.listdir(directory)
-            print(f"✅ {directory}/ ({len(files)} Dateien)")
+            print(f"✅ {directory}/ ({len(files)} files)")
         else:
             print(f"❌ {directory}/")
             missing_files.append(f"{directory}/")
@@ -47,25 +44,24 @@ def check_project_structure():
     print("\n" + "=" * 50)
     
     if missing_files:
-        print(f"⚠️ {len(missing_files)} Dateien/Verzeichnisse fehlen:")
+        print(f"⚠️ {len(missing_files)} missing files/directories:")
         for item in missing_files:
             print(f"   - {item}")
         return False
     else:
-        print("🎉 Projekt-Struktur vollständig!")
+        print("🎉 Structure OK")
         return True
 
 def check_dependencies():
-    """Überprüft installierte Dependencies"""
-    
-    print("\n🔧 DEPENDENCY-CHECK")
+    """Check installed runtime dependencies."""
+    print("\n🔧 DEPENDENCY CHECK")
     print("=" * 50)
     
     dependencies = [
-        ("speechify", "Speechify SDK"),
         ("pydub", "Audio Processing"),
         ("dotenv", "Environment Variables"),
-        ("numpy", "Scientific Computing")
+        ("numpy", "Scientific Computing"),
+        ("torch", "PyTorch (optional GPU)"),
     ]
     
     missing_deps = []
@@ -79,41 +75,37 @@ def check_dependencies():
             missing_deps.append(module)
     
     if missing_deps:
-        print(f"\n⚠️ Fehlende Dependencies: {', '.join(missing_deps)}")
-        print("💡 Installiere mit: pip install -r requirements.txt")
+        print(f"\n⚠️ Missing dependencies: {', '.join(missing_deps)}")
+        print("💡 Install with: pip install -r requirements.txt")
         return False
     else:
-        print("\n🎉 Alle Dependencies installiert!")
+        print("\n🎉 All dependencies installed")
         return True
 
 def show_quick_start():
-    """Zeigt Quick-Start-Anleitung"""
-    
+    """Display quick start instructions (local, no API keys)."""
     print("\n🚀 QUICK START")
     print("=" * 50)
-    print("1. Python-Umgebung erstellen:")
+    print("1. Create Python virtual environment:")
     print("   python -m venv tts-env")
     print("   source tts-env/bin/activate  # Linux/Mac")
-    print("   # oder: tts-env\\Scripts\\activate  # Windows")
+    print("   # or: tts-env\\Scripts\\activate  # Windows")
     print()
-    print("2. Dependencies installieren:")
+    print("2. Install dependencies:")
     print("   pip install -r requirements.txt")
     print()
-    print("3. API-Key konfigurieren:")
-    print("   cp .env.example .env")
-    print("   # .env bearbeiten und SPEECHIFY_API_KEY setzen")
+    print("3. (Optional) create .env:")
+    print("   cp .env.example .env  # optional defaults only")
     print()
-    print("4. Demo-Podcast generieren:")
-    print("   python speechify_official.py examples/demo.md")
+    print("4. Mock test (no model download):")
+    print("   python chatterbox_tts.py podscripts/classic-rock/classic-rock.md --language de --mock --output-dir out_test")
     print()
-    print("5. Weitere Sprachen testen:")
-    print("   python speechify_official.py examples/demo.md --language en")
-    print("   python speechify_official.py examples/demo.md --language fr")
+    print("5. Real synthesis (first run downloads weights):")
+    print("   python chatterbox_tts.py podscripts/classic-rock/classic-rock.md --language de --output-dir out_real")
 
 def main():
-    """Hauptfunktion"""
-    
-    print("🎙️ MULTILINGUAL PODCAST TTS - PROJEKT-STATUS")
+    """Entry point."""
+    print("🎙️ CHATTERBOX PODCAST TTS - PROJECT STATUS")
     print("=" * 60)
     
     structure_ok = check_project_structure()
@@ -124,11 +116,11 @@ def main():
     print("\n" + "=" * 60)
     
     if structure_ok and deps_ok:
-        print("🎉 PROJEKT BEREIT FÜR DEN EINSATZ!")
-        print("🎯 Nächster Schritt: API-Key in .env setzen")
+        print("🎉 PROJECT READY – no API keys required")
+        print("🎯 Next: run mock or real synthesis")
     else:
-        print("⚠️ PROJEKT SETUP UNVOLLSTÄNDIG")
-        print("🔧 Folge den obigen Anweisungen zur Behebung")
+        print("⚠️ INCOMPLETE PROJECT SETUP")
+        print("🔧 Follow instructions above to resolve")
 
 if __name__ == "__main__":
     main()

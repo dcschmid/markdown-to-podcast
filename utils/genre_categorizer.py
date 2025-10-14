@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Genre Kategorisierungs-Modul für Markdown-to-Podcast Projekt
+Genre categorization module for the markdown-to-podcast project.
 
-Dieses Modul bietet Funktionen zur automatischen Kategorisierung von Musik-Genres
-in übergeordnete Hauptkategorien.
+Provides helpers to map detailed music genre strings into broader parent categories.
 """
 
 from typing import Dict, List, Optional
@@ -12,10 +11,10 @@ import re
 
 
 class GenreCategorizer:
-    """Klasse zur Kategorisierung von Musik-Genres"""
+    """Categorize music genres into higher level buckets."""
 
     def __init__(self):
-        """Initialisiert den Genre-Kategorisierer mit vordefinierten Mappings"""
+        """Initialize with predefined mappings."""
         self.genre_mappings = {
             # Rock Genres
             'rock': [
@@ -143,56 +142,55 @@ class GenreCategorizer:
             ]
         }
 
-        # Reverse mapping für schnelle Lookup
+    # Reverse mapping for fast lookup
         self._create_reverse_mapping()
 
     def _create_reverse_mapping(self):
-        """Erstellt ein Reverse-Mapping von Genre zu Kategorie"""
+        """Create reverse mapping from genre -> category."""
         self.reverse_mapping = {}
         for category, genres in self.genre_mappings.items():
             for genre in genres:
                 self.reverse_mapping[genre.lower()] = category
 
     def categorize_genre(self, genre: str) -> Optional[str]:
-        """
-        Kategorisiert ein einzelnes Genre
+        """Categorize a single genre.
 
         Args:
-            genre: Das zu kategorisierende Genre
+            genre: raw genre string
 
         Returns:
-            Die Hauptkategorie oder None wenn nicht gefunden
+            Parent category or None if not found.
         """
         if not genre:
             return None
 
         genre_clean = self._clean_genre_name(genre)
 
-        # Direkte Suche
+    # Direct lookup
         if genre_clean in self.reverse_mapping:
             return self.reverse_mapping[genre_clean]
 
-        # Fuzzy matching für ähnliche Begriffe
+    # Fuzzy matching for close variants
         return self._fuzzy_match(genre_clean)
 
     def _clean_genre_name(self, genre: str) -> str:
-        """Bereinigt Genre-Namen für besseres Matching"""
+        """Normalize / clean a genre string for matching."""
         genre = genre.lower().strip()
-        # Entferne Sonderzeichen
+    # Remove special characters
         genre = re.sub(r'[^\w\s-]', '', genre)
-        # Normalisiere Whitespace
+    # Normalize whitespace
         genre = re.sub(r'\s+', ' ', genre)
         return genre
 
     def _fuzzy_match(self, genre: str) -> Optional[str]:
-        """Versucht ein Fuzzy-Matching für unbekannte Genres"""
-        # Suche nach Teilstrings in bekannten Genres
+        """Attempt heuristic fuzzy matching for unknown genres."""
+        # Substring search among known genres
         for known_genre, category in self.reverse_mapping.items():
-            # Check ob das gesuchte Genre ein Substring eines bekannten Genres ist
+            # Check if either is a substring of the other
             if genre in known_genre or known_genre in genre:
                 return category
 
-        # Spezielle Regeln für häufige Fälle
+    # Heuristic fallbacks for common tokens
         if 'metal' in genre:
             return 'metal'
         elif 'rock' in genre:
@@ -223,14 +221,13 @@ class GenreCategorizer:
         return None
 
     def categorize_multiple_genres(self, genres: List[str]) -> Dict[str, str]:
-        """
-        Kategorisiert mehrere Genres auf einmal
+        """Categorize multiple genres.
 
         Args:
-            genres: Liste von Genre-Namen
+            genres: list of genre names
 
         Returns:
-            Dictionary mit Genre -> Kategorie Mappings
+            Mapping genre -> category
         """
         result = {}
         for genre in genres:
@@ -240,31 +237,15 @@ class GenreCategorizer:
         return result
 
     def get_genres_by_category(self, category: str) -> List[str]:
-        """
-        Gibt alle Genres einer bestimmten Kategorie zurück
-
-        Args:
-            category: Die Kategorie
-
-        Returns:
-            Liste der Genres in dieser Kategorie
-        """
+        """Return all genres belonging to a category."""
         return self.genre_mappings.get(category, [])
 
     def get_all_categories(self) -> List[str]:
-        """Gibt alle verfügbaren Kategorien zurück"""
+        """Return list of all available categories."""
         return list(self.genre_mappings.keys())
 
     def get_category_stats(self, genres: List[str]) -> Dict[str, int]:
-        """
-        Erstellt Statistiken über Genre-Kategorien
-
-        Args:
-            genres: Liste von Genres
-
-        Returns:
-            Dictionary mit Kategorie -> Anzahl
-        """
+        """Compute category frequency stats for a list of genres."""
         stats = {}
         for genre in genres:
             category = self.categorize_genre(genre)
@@ -274,24 +255,24 @@ class GenreCategorizer:
 
 
 def main():
-    """Beispiel-Verwendung des Genre-Kategorisierers"""
+    """Example usage when run as a script."""
     categorizer = GenreCategorizer()
 
-    # Test mit verschiedenen Genres
+    # Demo test set
     test_genres = [
         'Rock', 'Heavy Metal', 'Pop', 'Hip Hop', 'Jazz',
         'Death Metal', 'Alternative Rock', 'Techno', 'Blues',
         'Progressive Metal', 'Indie Pop', 'Drum and Bass'
     ]
 
-    print("Genre-Kategorisierung Test:")
+    print("Genre categorization test:")
     print("=" * 50)
 
     for genre in test_genres:
         category = categorizer.categorize_genre(genre)
         print(f"{genre:20} -> {category}")
 
-    print("\nKategorien-Statistiken:")
+    print("\nCategory statistics:")
     print("=" * 50)
     stats = categorizer.get_category_stats(test_genres)
     for category, count in sorted(stats.items()):

@@ -29,7 +29,7 @@
 
 ---
 
-## 🎼 Classical & Orchestral (Done, but new age must be generated)
+## 🎼 Classical & Orchestral (Done)
 - Piano
 - Chamber Music
 - Classical
@@ -39,6 +39,18 @@
 - New Age
 
 ---
+
+## Artist female Metal Queens (Done)
+- Christina Scabbia
+- Sharon den Adel
+- Amy Lee
+- charlotte Wessels
+- Doro Pesch
+- Floor Jansen
+- Simone Simons
+- Tarja Turunen
+
+
 
 ## 🎸 Classic Rock & Hard Rock
 - Classic Rock
