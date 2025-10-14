@@ -1,23 +1,24 @@
-# Markdown to Podcast TTS
+# Markdown to Podcast TTS (Chatterbox Edition)
 
-# Markdown to Podcast TTS
+This project converts scripted Markdown dialogue into high‑quality podcast audio (MP3) plus WebVTT subtitles using the open‑source **Chatterbox Multilingual TTS** model (Resemble AI). Optional: generate promotional audiogram MP4 videos.
 
-This repository converts scripted Markdown dialogues into high-quality podcast audio and optional audiogram videos.
+The previous Speechify backend has been fully removed. No API keys, no external TTS calls – everything runs locally (or via a lightweight mock mode for fast tests).
 
-It uses the Speechify Official SDK for TTS, Pydub for audio processing, and FFmpeg for encoding. The CLI and library are designed for production usage: SSML is enabled by default and automatic mappings favor English voices for consistent output quality.
+> For automation / coding agents see `AGENTS.md`.
 
 ## Contents
 
-- `speechify_official.py` — main CLI and library wrapper to convert Markdown scripts into audio and subtitles
-- `audiogram.py` — helper script to generate short promotional audiogram videos
-- `examples/` — example markdown scripts
+- `chatterbox_tts.py` – main script: Markdown → TTS (Chatterbox) → MP3 + VTT (+ optional segment WAVs)
+- `audiogram.py` – audiogram video generator
+- `podscripts/` – sample scripts
+- `utils/` – helper utilities (image optimization, categorization, etc.)
 
 ## Quick start
 
 Requirements
 
-- Python 3.8+
-- FFmpeg installed and available on PATH
+- Python 3.9+ (3.11 recommended for faster PyTorch / Chatterbox builds)
+- FFmpeg on PATH (MP3 export & audiogram rendering)
 
 Install dependencies and prepare the environment:
 
@@ -26,195 +27,384 @@ python -m venv podcast-tts-env
 source podcast-tts-env/bin/activate
 pip install -r requirements.txt
 
+# (Optional) create .env with default overrides (no secrets required)
 cp .env.example .env
-# edit .env and set SPEECHIFY_API_KEY
+
+Note on Python compatibility
+----------------------------
+
+The requirements file previously listed `audioop-lts` for Python 3.13 compatibility. This
+project supports Python 3.8+ and `audioop` is part of the standard library for Python <=3.12.
+To avoid install errors on older Python versions, `audioop-lts` was removed from
+`requirements.txt`. If you run this project on Python >=3.13, you may need to install
+`audioop-lts` separately.
 ```
 
-Run a demo (if `examples/demo.md` exists):
+Mock pipeline test (no model download):
 
 ```bash
-python speechify_official.py examples/demo.md --language de --output-dir output
+python chatterbox_tts.py podscripts/classic-rock/classic-rock.md --language de --mock --output-dir output_mock
 ```
 
-## speechify_official.py — CLI and programmatic usage
-
-`speechify_official.py` converts a Markdown script into a final MP3 file and a WebVTT subtitle file. It splits the script into speaker segments, performs TTS calls, and merges the segments.
-
-Important production behavior
-
-- Automatic voice mapping defaults to English voices for automatic assignments:
-  - `daniel` / `male` -> `jeremy`
-  - `annabelle` / `female` -> `patricia`
-- SSML is enabled by default; there is no `--no-ssml` flag.
-- Interactive test and listing flags were removed from the production CLI (e.g. `--test-voices`, `--test-emotions`, `--list-voices`, `--test-api`, `--test-ssml`). Use separate test scripts or unit tests for validation.
-
-CLI example
+Real synthesis (first run downloads weights):
 
 ```bash
-python speechify_official.py <input_markdown.md> \
+python chatterbox_tts.py podscripts/classic-rock/classic-rock.md --language de --device auto --output-dir output_real
+```
+
+With a style prompt (zero‑shot reference):
+
+```bash
+python chatterbox_tts.py script.md --language en --audio-prompt voices/en_male.wav --device cuda
+```
+
+---
+
+## chatterbox_tts.py – core features
+
+Converts a Markdown dialogue script into:
+
+- Final MP3 file
+- WebVTT subtitle file
+- Per‑segment WAVs (default ON; disable with `--no-save-segments-wav`)
+
+Removed legacy features: JSON timing export, intro/outro music injection.
+
+Key capabilities (default-on features in bold, disable via `--no-*`):
+
+- Speaker parsing (`Name: Text` lines)
+- Languages: `de en es it fr pt`
+- Voice/style via `--audio-prompt` or local `voices/` reference clips
+- Optional automatic prompt download (`--auto-prompts`) – German intentionally has no remote prompt URLs
+- Configurable pauses (`--pause-ms`), expressiveness (`--exaggeration`), guidance weight (`--cfg-weight`)
+- Mock mode (silence) for CI / structural tests
+- **Structured output hierarchy** (`--no-structured-output` to flatten)
+- **Segment WAV export** (`--no-save-segments-wav`)
+- **Final WAV export** (`--no-export-wav`)
+- **Warning suppression** (`--no-suppress-warnings`)
+
+Install (real synthesis):
+
+```bash
+pip install chatterbox-tts  # installiert auch torch / torchaudio (ggf. CPU Variante)
+# oder für Entwicklung:
+git clone https://github.com/resemble-ai/chatterbox.git
+cd chatterbox
+pip install -e .
+```
+
+FFmpeg is required for MP3 export via pydub.
+
+Mock test (no model download):
+
+```bash
+python chatterbox_tts.py podscripts/classic-rock/classic-rock.md --language de --mock --output-dir out_mock
+```
+
+Real synthesis (GPU preferred):
+
+```bash
+python chatterbox_tts.py podscripts/classic-rock/classic-rock.md \
   --language de \
-  --output-dir output \
-  --speakers "daniel:jeremy,annabelle:patricia" \
-  --intro-music audio_samples/epic-metal.mp3
+  --device cuda \
+  --output-dir out_real \
+  --exaggeration 0.5 --cfg-weight 0.5
 ```
 
-Programmatic example
+With reference prompt:
+
+```bash
+python chatterbox_tts.py script.md --language en --audio-prompt voices/en_male.wav --device cuda
+```
+
+Important flags (default-on features have inverse `--no-*` counterpart):
+
+- `--language` – target language (de,en,es,it,fr,pt)
+- `--speakers` – override mapping (e.g. `anna:de_f,daniel:de_m`)
+- `--audio-prompt` – global style reference (wav/mp3/flac/ogg/m4a)
+- `--pause-ms` – silence between segments
+- `--exaggeration` – expressiveness (0–1)
+- `--cfg-weight` – guidance/style balance
+- `--mock` – silence instead of real TTS
+- `--auto-prompts` – auto fetch male/female prompts (not for `de`)
+- `--voices-dir` – local prompt clips (highest priority)
+- `--structured-output` / `--no-structured-output`
+- `--save-segments-wav` / `--no-save-segments-wav`
+- `--export-wav` / `--no-export-wav`
+- `--suppress-warnings` / `--no-suppress-warnings`
+
+Default output layout (if flattened with `--no-structured-output`):
+
+```text
+output_real/
+  classic-rock.mp3
+  classic-rock.vtt
+  classic-rock.wav (optional)
+```
+
+With structured output (default) and segment WAVs:
+
+```text
+output_real/
+  de/
+    classic-rock/
+      final/
+  classic-rock.mp3
+  classic-rock.vtt
+  classic-rock.wav
+      segments/
+        classic-rock_segment_001_daniel.wav
+        classic-rock_segment_002_annabelle.wav
+        ...
+```
+
+Segment filename pattern:
+
+`<base>_segment_<index>_<speaker>.wav` with index width = max(3, len(str(total_segments))). Example: `1960s_segment_001_daniel.wav`.
+
+Local prompt voices:
+
+Place in `voices/`:
+
+- `de_male.(wav|mp3|flac|ogg|m4a)` / `de_female.*`
+- Fallback: `male.*`, `female.*`
+
+Non‑WAV formats convert once into cache (WAV). German intentionally has no remote prompts – supply local clips.
+
+Limitations / notes:
+
+- First run downloads weights
+- GPU strongly recommended for longer scripts
+- No SSML parser – emulate with segmentation / `--pause-ms`
+- Voice mapping heuristic only; timbre from your prompt
+
+### Detailed setup workflow
+
+```bash
+python3.11 -m venv cb-env
+source cb-env/bin/activate
+pip install --upgrade pip
+pip install chatterbox-tts
+# Optional CUDA Build installieren falls nötig:
+# pip install torch --index-url https://download.pytorch.org/whl/cu121
+```
+
+Python smoke test:
 
 ```python
-from speechify_official import SpeechifyPodcastTTS
-
-tts = SpeechifyPodcastTTS(api_key="sk-...")
-output = tts.process_podcast_script(
-    "scripts/episode1.md",
-    output_dir="output",
-    language="de",
-    custom_speakers={"daniel": "jeremy"},
-)
-print("Generated:", output)
+from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+model = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+print("Sample Rate:", getattr(model, "sr", "?"))
 ```
 
-Environment variables
+### Parameter guidance
 
-- `SPEECHIFY_API_KEY` — Speechify API key (or pass `--api-key`)
-- `SPEECHIFY_LOG_LEVEL` — optional, set to `DEBUG`, `INFO`, or `WARNING` (default: `INFO`)
+| Parameter | Effect | Typical Range | Note |
+|-----------|--------|---------------|------|
+| `--exaggeration` | Expressiveness | 0.4–0.7 | Higher = more dynamic |
+| `--cfg-weight` | Guidance vs style | 0.3–0.6 | Lower = more prompt influence |
+| `--pause-ms` | Silence between segments | 300–800 | Simulates SSML breaks |
+| `--audio-prompt` | Style reference clip | 5–10s | Clean mono snippet |
 
-## audiogram.py — create a visual audiogram
+### Performance tips
 
-`audiogram.py` generates a short MP4 video with a waveform visualization and an optional cover image for social sharing.
+- GPU (`--device cuda`) verwenden für längere Skripte
+- Segmente moderat halten (<25s)
+- Gleiches Environment wiederverwenden (kein erneuter Cold Start)
+- Bei knapper VRAM: `--device cpu`
 
-BASIC example
+### Troubleshooting
+
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| Slow first run | Weight download & init | Reuse venv; later runs faster |
+| CUDA OOM | Not enough VRAM | `--device cpu` or free GPU memory |
+| Monotone output | Low exaggeration | Increase to ~0.6–0.7 |
+| Speech too fast | High exaggeration + high cfg | Reduce both slightly |
+| Wrong style / accent | Mismatched prompt language | Provide matching prompt |
+| Missing German prompt | No local clips | Add `voices/de_male.*` & `voices/de_female.*` |
+
+### Migration from Speechify
+
+Removed to eliminate vendor costs/limits and enable fully offline reproducible TTS with flexible zero‑shot style prompts.
+
+Removed artifacts: `speechify_official.py`, `SPEECHIFY_API_KEY`, JSON metadata export, intro/outro music flags.
+
+Old:
 
 ```bash
-python audiogram.py --audio output/podcast.mp3 --cover covers/the-melody-mind-podcast.png --title "Episode 1" --subtitle "The Golden 50s"
+python speechify_official.py script.md ...
 ```
 
-Extended example (with subtitles and export target)
+New:
+
+```bash
+python chatterbox_tts.py script.md --language de ...
+```
+
+---
+
+## audiogram.py – create audiogram video
+
+Creates an MP4 (waveform + cover + optional subtitles) for social media.
+
+Basic example:
+
+```bash
+python audiogram.py --audio output/classic-rock.mp3 --cover covers/the-melody-mind-podcast.png --title "Episode 1" --subtitle "Classic Rock"
+```
+
+Extended example (with subtitles):
 
 ```bash
 python audiogram.py \
-  --audio output/en/decades/1980s/1980s.mp3 \
+  --audio output/de/classic-rock/final/classic-rock.mp3 \
   --cover covers/1980s.png \
   --title "The Melody Mind Podcast" \
-  --subtitle "Episode 4 · The 80s - Synth-Pop & Hair Metal" \
+  --subtitle "Episode 4 · The 80s" \
   --size 1920x1080 \
-  --bg_blur 18 \
-  --theme midnight \
   --out movies/1980s.mp4 \
-  --subtitles output/en/decades/1980s/1980s.vtt \
+  --subtitles output/de/classic-rock/final/classic-rock.vtt \
   --subs_mode soft
 ```
 
-Common options
+Key options:
 
-- `--audio` (required) — input audio (MP3/WAV)
-- `--cover` — optional cover image (PNG/JPG)
-- `--title` — title text
-- `--subtitle` — subtitle text
-- `--size` — video resolution, e.g. `1920x1080` or `1080x1080`
-- `--out` — output filename (default: `audiogram.mp4`)
+- `--audio` (MP3/WAV) – required
+- `--cover` (PNG/JPG) – optional
+- `--title` / `--subtitle` – text overlays
+- `--size` – e.g. `1920x1080` or `1080x1080`
+- `--out` – output filename (default `audiogram.mp4`)
+- `--subtitles` + `--subs_mode soft|burn`
 
-Ensure FFmpeg is installed for audio processing and video encoding.
+FFmpeg must be installed.
 
-## Markdown format and speaker mapping
+---
 
-The CLI expects speaker lines in the Markdown file. Example:
+## optimize_covers.py – optimize cover images
+
+Converts cover artwork (PNG/JPG/WebP) into optimized JPEG (optionally progressive) for efficient delivery.
+
+Why:
+
+- Large PNGs waste bandwidth
+- Progressive JPEGs improve perceived load speed
+- Downscaling trims unnecessary pixels
+
+Process:
+
+1. Collect images
+2. Flatten transparency onto white
+3. Scale to max edge
+4. Export JPEG (`--quality`, optional `--progressive`)
+5. Optional report (table / CSV)
+
+Example:
+
+```bash
+python optimize_covers.py --input-dir covers --output-dir covers_web --max-size 1200 --quality 82 --progressive
+```
+
+Key flags:
+
+| Flag | Meaning |
+|------|---------|
+| `--input-dir` | Source directory |
+| `--output-dir` | Destination directory |
+| `--max-size` | Max edge length |
+| `--quality` | JPEG quality (80–85 rec.) |
+| `--progressive` | Progressive JPEG |
+| `--report` | Print summary table |
+| `--report-csv` | CSV report |
+
+Incremental run:
+
+```bash
+python optimize_covers.py -i covers -o covers_web --skip-existing --progressive
+```
+
+---
+
+## Markdown format & speaker mapping
+
+Example:
 
 ```markdown
-Daniel: Welcome to our podcast.
-Annabelle: Thank you, Daniel. Today we'll talk about...
-Daniel: Let's dive in.
+Daniel: Willkommen zu unserer Episode.
+Annabelle: Danke Daniel, heute sprechen wir über...
+Daniel: Legen wir los.
 ```
 
-Speaker lines are detected by a name followed by `:`. Subsequent lines belong to that speaker until the next speaker label or a blank line.
-
-Override automatic voice mapping with the `--speakers` flag:
+Override mapping:
 
 ```bash
---speakers "daniel:jeremy,annabelle:patricia"
+--speakers "daniel:de_m,annabelle:de_f"
 ```
 
-## Output
+## Output (default)
 
-The script writes:
+Generated:
 
-- `output/<scriptname>.mp3` — final podcast audio
-- `output/<scriptname>.vtt` — WebVTT subtitles
+- `output/<name>.mp3`
+- `output/<name>.vtt`
+- `output/<name>.wav` (default ON unless disabled with `--no-export-wav`)
 
-Temporary per-segment files are created during generation and removed after the final mix.
+With `--save-segments-wav` + `--structured-output` see example tree above.
 
-## Troubleshooting
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-FFmpeg missing: install via your package manager (Ubuntu: `sudo apt install ffmpeg`, macOS: `brew install ffmpeg`)
-
-Invalid API key: verify `SPEECHIFY_API_KEY` and network access
-
-For more verbose logs (debugging):
-
-```bash
-export SPEECHIFY_LOG_LEVEL=DEBUG
-python speechify_official.py examples/demo.md
-```
+Temporary files are cleaned (segment WAVs preserved if requested).
 
 ## Advanced usage
 
-Batch processing example
+Batch processing:
 
 ```bash
-for file in scripts/*.md; do
-  python speechify_official.py "$file" --language auto
+for f in podscripts/classic-rock/*.md; do
+  python chatterbox_tts.py "$f" --language de --structured-output --output-dir batch_out
 done
 ```
 
-Custom voice assignment
+Custom token mapping:
 
 ```bash
-python speechify_official.py script.md --speakers daniel:custom_male,anna:custom_female
+python chatterbox_tts.py script.md --language en --speakers "host:en_m,guest:en_f"
 ```
 
 ## Project structure
 
-```
+```text
 markdown-to-podcast/
-├── speechify_official.py    # Main TTS script
+├── chatterbox_tts.py        # Main TTS script
 ├── audiogram.py             # Audiogram generator
-├── requirements.txt         # Dependencies
-├── README.md                # This documentation
-├── LICENSE                  # MIT License
-├── .env.example             # Environment template
-├── examples/                # Example scripts
-└── output/                  # Generated audio files
+├── optimize_covers.py       # Cover optimization
+├── utils/                   # Helper modules
+├── requirements.txt
+├── README.md
+├── LICENSE
+├── .env.example
+└── output/                  # Generierte Dateien
 ```
 
 ## Contributing
 
-Contributions are welcome. Open issues or PRs for feature requests, bug fixes, or documentation improvements.
+PRs welcome: features, fixes, docs, tests.
 
 ## License
 
-MIT License — see the included `LICENSE` file for details.
-
-4. Push branch: `git push origin feature/new-feature`
-5. Create Pull Request
+MIT – see `LICENSE`.
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) for details.
-
 ## 🙏 Acknowledgments
 
-- **Speechify**: For the excellent TTS API and multilingual voices
-- **Contributors**: All testers and feedback providers
+- Chatterbox / Resemble AI OSS
+- Testers & contributors
 
 ---
 
 **Ready to create your multilingual podcast?**
 
 ```bash
-python speechify_official.py examples/demo.md --language auto
+python chatterbox_tts.py podscripts/classic-rock/classic-rock.md --language de --mock --output-dir output
 ```
+
+*** End Patch
