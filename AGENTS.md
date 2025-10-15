@@ -61,7 +61,6 @@ If FFmpeg missing: inform user (do not auto‑install).
 - No external API keys (Speechify removed).
 - Speaker mapping consistent: `daniel/annabelle` available in default mapping per language.
 - Do not re‑segment artificially; keep original granularity.
-- Bundled prompts make `--auto-prompts` usually unnecessary (flag retained for backwards compatibility)
 
 ---
 

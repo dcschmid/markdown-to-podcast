@@ -407,7 +407,6 @@ def main():
     parser.add_argument("--no-export-wav", action="store_false", dest="export_wav")
     parser.add_argument("--save-segments-wav", action="store_true", default=True, help="Save each segment as WAV (disable with --no-save-segments-wav)")
     parser.add_argument("--no-save-segments-wav", action="store_false", dest="save_segments_wav")
-    parser.add_argument("--auto-prompts", action="store_true", help="Auto-download male/female reference prompts (skips de)")
     parser.add_argument("--prompts-cache-dir", default=".cache/chatterbox_prompts", help="Cache dir for downloaded prompts")
     parser.add_argument("--suppress-warnings", action="store_true", default=True, help="Suppress common future/deprecation warnings (disable with --no-suppress-warnings)")
     parser.add_argument("--no-suppress-warnings", action="store_false", dest="suppress_warnings")
@@ -528,8 +527,6 @@ def main():
     local_cache = Path(args.prompts_cache_dir) / "_local_convert"
     local_prompt_paths = find_local_prompts(language, voices_dir, local_cache)
 
-    if args.auto_prompts and not local_prompt_paths:
-        logger.warning("--auto-prompts deprecated: bundled local prompts already present; ignoring remote download.")
     if local_prompt_paths:
         logger.info("Using local prompts instead of automatic downloads")
 

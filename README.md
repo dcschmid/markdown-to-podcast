@@ -75,7 +75,6 @@ Key capabilities (default-on features in bold, disable via `--no-*`):
 - Languages: `de en es it fr pt`
 - Voice/style via `--audio-prompt` or local `voices/` reference clips
 - Local bundled style prompts for ALL supported languages (male & female) in `voices/` (no download needed)
-- (Legacy) optional automatic prompt download (`--auto-prompts`) – now usually unnecessary
 - Configurable pauses (`--pause-ms`), expressiveness (`--exaggeration`), guidance weight (`--cfg-weight`)
 - Mock mode (silence) for CI / structural tests
 - **Structured output hierarchy** (`--no-structured-output` to flatten)
@@ -126,7 +125,6 @@ Important flags (default-on features have inverse `--no-*` counterpart):
 - `--exaggeration` – expressiveness (0–1)
 - `--cfg-weight` – guidance/style balance
 - `--mock` – silence instead of real TTS
-- `--auto-prompts` – auto fetch male/female prompts (not for `de`)
 - `--voices-dir` – local prompt clips (highest priority)
 - `--structured-output` / `--no-structured-output`
 - `--save-segments-wav` / `--no-save-segments-wav`
