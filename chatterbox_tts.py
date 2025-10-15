@@ -86,32 +86,7 @@ DEFAULT_VOICE_MAPPING: Dict[str, Dict[str, str]] = {
     "pt": {"male": "pt_m", "female": "pt_f", "daniel": "pt_m", "annabelle": "pt_f"},
 }
 
-# Reference prompt URLs (adapted from multilingual_app.py in Chatterbox repo).
-LANG_PROMPT_URLS: Dict[str, Dict[str, str]] = {
-    # German intentionally left empty -> forces local voices/ clips (e.g. de_female.*, de_male.*)
-    "de": {},
-    "en": {
-        "female": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/en_f1.flac",
-        "male": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/en_f1.flac",
-    },
-    "es": {
-        "female": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/es_f1.flac",
-        "male": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/es_f1.flac",
-    },
-    "fr": {
-        "female": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/fr_f1.flac",
-        "male": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/fr_f1.flac",
-    },
-    "it": {
-        # Italian example provides only a male file -> reuse for female if missing
-        "male": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/it_m1.flac",
-        "female": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/it_m1.flac",
-    },
-    "pt": {
-        "male": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/pt_m1.flac",
-        "female": "https://storage.googleapis.com/chatterbox-demo-samples/mtl_prompts/pt_m1.flac",
-    },
-}
+# Remote prompt URL support removed (local bundled prompts now cover all supported languages).
 
 # Regex: speaker line "Name: Text"
 SPEAKER_LINE = re.compile(r"^([A-Za-z0-9_ÄÖÜäöüß\- ]{1,40}):\s*(.*)$")
@@ -554,34 +529,8 @@ def main():
     local_prompt_paths = find_local_prompts(language, voices_dir, local_cache)
 
     if args.auto_prompts and not local_prompt_paths:
-        if not HAS_REQUESTS:
-            logger.warning("'requests' not installed – automatic prompts disabled")
-        else:
-            cache_dir = Path(args.prompts_cache_dir)
-            cache_dir.mkdir(parents=True, exist_ok=True)
-            prompt_cfg = LANG_PROMPT_URLS.get(language, {})
-            for gender, url in prompt_cfg.items():
-                try:
-                    file_name = url.split("/")[-1]
-                    local_path = cache_dir / file_name
-                    if not local_path.exists():
-                        logger.info("Downloading prompt %s -> %s", gender, local_path)
-                        resp = requests.get(url, timeout=30)
-                        resp.raise_for_status()
-                        local_path.write_bytes(resp.content)
-                    else:
-                        logger.debug("Prompt cached: %s", local_path)
-                    auto_prompt_paths[gender] = str(local_path)
-                except Exception as e:  # pragma: no cover
-                    logger.warning("Could not fetch prompt %s (%s)", gender, e)
-            if not auto_prompt_paths:
-                if language == "de":
-                    logger.info("No remote prompts for German – rely on local voices/ files if present")
-                else:
-                    logger.warning("No automatic prompts available – continuing without")
-            else:
-                logger.info("Auto prompts active: %s", {k: Path(v).name for k, v in auto_prompt_paths.items()})
-    elif local_prompt_paths:
+        logger.warning("--auto-prompts deprecated: bundled local prompts already present; ignoring remote download.")
+    if local_prompt_paths:
         logger.info("Using local prompts instead of automatic downloads")
 
     pad_width = max(3, len(str(len(segments))))

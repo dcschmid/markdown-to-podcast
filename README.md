@@ -74,7 +74,8 @@ Key capabilities (default-on features in bold, disable via `--no-*`):
 - Speaker parsing (`Name: Text` lines)
 - Languages: `de en es it fr pt`
 - Voice/style via `--audio-prompt` or local `voices/` reference clips
-- Optional automatic prompt download (`--auto-prompts`) – German intentionally has no remote prompt URLs
+- Local bundled style prompts for ALL supported languages (male & female) in `voices/` (no download needed)
+- (Legacy) optional automatic prompt download (`--auto-prompts`) – now usually unnecessary
 - Configurable pauses (`--pause-ms`), expressiveness (`--exaggeration`), guidance weight (`--cfg-weight`)
 - Mock mode (silence) for CI / structural tests
 - **Structured output hierarchy** (`--no-structured-output` to flatten)
@@ -163,12 +164,15 @@ Segment filename pattern:
 
 Local prompt voices:
 
-Place in `voices/`:
+Bundled examples already included for every supported language, pattern:
 
-- `de_male.(wav|mp3|flac|ogg|m4a)` / `de_female.*`
-- Fallback: `male.*`, `female.*`
+`<lang>_male.(wav|mp3|flac|ogg|m4a)` and `<lang>_female.*` (e.g. `de_male.mp3`, `en_female.mp3`).
 
-Non‑WAV formats convert once into cache (WAV). German intentionally has no remote prompts – supply local clips.
+If you add new languages or want to override:
+
+1. Drop new files into `voices/` following the same `<lang>_male` / `<lang>_female` pattern.
+2. Non‑WAV formats are auto-converted once into cached WAV.
+3. Fallback still accepts generic `male.*` / `female.*` if language‑specific files missing.
 
 Limitations / notes:
 
