@@ -1,9 +1,4 @@
-"""Small standalone image geometry utilities.
-
-Previously used by an audiogram generator module that has since been removed.
-Kept because tests and potential future image layout tasks rely on the
-lightweight sizing helpers without pulling heavy dependencies.
-"""
+"""Small standalone image geometry utilities (aspect containment helper)."""
 from typing import Tuple
 
 

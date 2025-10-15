@@ -9,8 +9,7 @@ pydub>=0.25.1
 # Das Paket `audioop-lts` ist nur für Python >=3.13 notwendig und würde
 # ältere Python-Versionen beim Installieren blockieren. Daher entfernt.
 
-# Video and Image Processing
-moviepy>=1.0.3
+# Image Processing (cover optimization)
 Pillow>=10.0.0
 
 # Scientific Computing
