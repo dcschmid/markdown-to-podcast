@@ -1,12 +1,12 @@
 # AGENTS.md
 
-Operational guide for coding agents. Focus: deterministic, safe generation of podcast audio (Chatterbox TTS) from Markdown + optional audiogram.
+Operational guide for coding agents. Focus: deterministic, safe generation of podcast audio (Chatterbox TTS) from Markdown.
 
 ---
 
 ## 1. Overview
 
-Goal: Markdown dialogue scripts (format `Name: Text`) → MP3 + WebVTT, optionally per‑segment WAVs and an MP4 audiogram.
+Goal: Markdown dialogue scripts (format `Name: Text`) → MP3 + WebVTT, optionally per‑segment WAVs.
 
 Primary script:
 
@@ -27,7 +27,6 @@ Outputs (default-on features below can be disabled with `--no-*` flags):
 - `output/<name>.vtt`
 - `output/<name>.wav` (disable with `--no-export-wav`)
 - Segment WAVs (enable/disable: `--save-segments-wav` / `--no-save-segments-wav`, default ON)
-- Optional: MP4 audiogram
 
 ---
 

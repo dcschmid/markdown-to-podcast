@@ -1,7 +1,8 @@
-"""Small image utilities used by the audiogram generator.
+"""Small standalone image geometry utilities.
 
-This module intentionally keeps external dependencies minimal so it can be
-imported by unit tests without heavy packages like numpy or moviepy.
+Previously used by an audiogram generator module that has since been removed.
+Kept because tests and potential future image layout tasks rely on the
+lightweight sizing helpers without pulling heavy dependencies.
 """
 from typing import Tuple
 

@@ -1,6 +1,6 @@
 # Markdown to Podcast TTS (Chatterbox Edition)
 
-This project converts scripted Markdown dialogue into high‑quality podcast audio (MP3) plus WebVTT subtitles using the open‑source **Chatterbox Multilingual TTS** model (Resemble AI). Optional: generate promotional audiogram MP4 videos.
+This project converts scripted Markdown dialogue into high‑quality podcast audio (MP3) plus WebVTT subtitles using the open‑source **Chatterbox Multilingual TTS** model (Resemble AI).
 
 The previous Speechify backend has been fully removed. No API keys, no external TTS calls – everything runs locally (or via a lightweight mock mode for fast tests).
 
@@ -17,7 +17,7 @@ The previous Speechify backend has been fully removed. No API keys, no external 
 Requirements
 
 - Python 3.9+ (3.11 recommended for faster PyTorch / Chatterbox builds)
-- FFmpeg on PATH (MP3 export & audiogram rendering)
+- FFmpeg on PATH (MP3 export)
 
 Install dependencies and prepare the environment:
 
