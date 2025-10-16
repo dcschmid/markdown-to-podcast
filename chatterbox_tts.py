@@ -301,13 +301,28 @@ def export_webvtt(segments: List[Segment], path: Path):
         minutes = int((ts % 3600) // 60)
         secs = ts % 60
         return f"{hours:02d}:{minutes:02d}:{secs:06.3f}".replace(".", ",")
+    # Prüfe, ob Intro/Outro-Länge global verfügbar ist (übergeben als Attribut)
+    intro_duration = getattr(export_webvtt, "intro_duration", 0.0)
+    outro_duration = getattr(export_webvtt, "outro_duration", 0.0)
     with path.open("w", encoding="utf-8") as f:
         f.write("WEBVTT\n\n")
-        for i, seg in enumerate(segments, 1):
-            f.write(f"{i}\n")
-            f.write(f"{fmt(seg.start)} --> {fmt(seg.end)}\n")
+        idx = 1
+        if intro_duration > 0.0:
+            f.write(f"{idx}\n")
+            f.write(f"00:00:00,000 --> {fmt(intro_duration)}\n")
+            f.write(f"<v Musik>Intro-Musik\n\n")
+            idx += 1
+        for seg in segments:
+            f.write(f"{idx}\n")
+            f.write(f"{fmt(seg.start + intro_duration)} --> {fmt(seg.end + intro_duration)}\n")
             speaker = re.sub(r"\s+", "_", seg.speaker.title())
             f.write(f"<v {speaker}>{seg.text}\n\n")
+            idx += 1
+        if outro_duration > 0.0:
+            last_end = segments[-1].end + intro_duration if segments else intro_duration
+            f.write(f"{idx}\n")
+            f.write(f"{fmt(last_end)} --> {fmt(last_end + outro_duration)}\n")
+            f.write(f"<v Musik>Outro-Musik\n\n")
 
 
 def build_speaker_mapping(language: str, custom: Optional[Dict[str, str]]) -> Dict[str, str]:
@@ -569,10 +584,22 @@ def main():
             except Exception as e:  # pragma: no cover
                 logger.warning("Could not save segment %s (%s)", seg.index, e)
 
-    combined = assembler.assemble(audio_segments)
 
-    # Intro/outro music feature removed: directly use synthesized concatenation
-    final_audio = combined
+    # Intro/Outro einfügen
+    intro_path = Path("intro/epic-metal.mp3")
+    if intro_path.exists():
+        intro_audio = AudioSegment.from_file(str(intro_path))
+        outro_audio = intro_audio  # Gleiches Audio für Outro
+        combined = assembler.assemble(audio_segments)
+        final_audio = intro_audio + combined + outro_audio
+        intro_duration_sec = len(intro_audio) / 1000.0
+        outro_duration_sec = len(outro_audio) / 1000.0
+        logger.info(f"Intro/Outro hinzugefügt: {intro_path.name} ({intro_duration_sec:.1f}s)")
+    else:
+        combined = assembler.assemble(audio_segments)
+        final_audio = combined
+        intro_duration_sec = 0.0
+        outro_duration_sec = 0.0
 
     # Export final assets
     mp3_path = final_dir / f"{base_name}.mp3"
@@ -584,7 +611,11 @@ def main():
         final_audio.export(str(wav_path), format="wav")
         logger.info("WAV exported: %s", wav_path)
 
+
     vtt_path = final_dir / f"{base_name}.vtt"
+    # Übergabe der Intro/Outro-Länge an export_webvtt
+    export_webvtt.intro_duration = intro_duration_sec
+    export_webvtt.outro_duration = outro_duration_sec
     export_webvtt(segments, vtt_path)
     logger.info("VTT exported: %s", vtt_path)
 
