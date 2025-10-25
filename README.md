@@ -22,6 +22,8 @@ Convert structured Markdown dialogue into podcast‑ready audio (MP3/WAV) plus W
 14. Acknowledgments
 15. Ready Example
 
+**GPU Setup:** For detailed GPU/CUDA setup and troubleshooting, see [`GPU_SETUP.md`](GPU_SETUP.md)
+
 ---
 
 ## 1. Overview & Features
@@ -156,11 +158,59 @@ pip install -e .
 cd ..
 ```
 
-If you need a CUDA build of PyTorch (to accelerate synthesis), install it explicitly before or after Chatterbox (adjust CUDA version as needed):
+### 3.4a GPU Setup (Recommended for Performance)
+
+**IMPORTANT:** For optimal TTS performance, GPU acceleration is strongly recommended (5-10x faster).
+
+#### Quick GPU Setup (Automated)
+
+Use the automated setup script:
 ```bash
-pip install torch --index-url https://download.pytorch.org/whl/cu121
-pip install torchaudio --index-url https://download.pytorch.org/whl/cu121
+bash setup_gpu.sh
 ```
+
+The script will:
+- Detect your GPU architecture
+- Install the correct PyTorch + CUDA version
+- Verify the installation works
+
+#### Manual GPU Setup
+
+If you prefer manual installation or the script fails:
+
+1. Check your GPU compute capability:
+   ```bash
+   nvidia-smi --query-gpu=name,compute_cap --format=csv
+   ```
+
+2. Install PyTorch based on your GPU:
+
+   **RTX 50xx (Blackwell, sm_120):**
+   ```bash
+   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu130
+   ```
+
+   **RTX 40xx (Ada Lovelace, sm_89):**
+   ```bash
+   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu124
+   ```
+
+   **RTX 30xx (Ampere, sm_86):**
+   ```bash
+   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu124
+   ```
+
+   **RTX 20xx / GTX 16xx (Turing, sm_75):**
+   ```bash
+   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+   ```
+
+3. Verify CUDA is working:
+   ```bash
+   python -c "import torch; print('CUDA:', torch.cuda.is_available())"
+   ```
+
+**For detailed GPU troubleshooting, see `GPU_SETUP.md`**
 
 ### 3.5 (Optional) Add a `.env` file
 
@@ -379,11 +429,15 @@ print("Sample Rate:", getattr(model, "sr", "?"))
 | Symptom | Cause | Fix |
 |---------|-------|-----|
 | Slow first run | Weight download & init | Reuse venv; later runs faster |
+| **"sm_120 not compatible"** | **RTX 50xx GPU needs newer PyTorch** | **See GPU_SETUP.md or run `bash setup_gpu.sh`** |
+| **"no kernel image available"** | **PyTorch doesn't support your GPU** | **Install correct CUDA version (see GPU_SETUP.md)** |
 | CUDA OOM | Not enough VRAM | `--device cpu` or free GPU memory |
 | Monotone output | Low exaggeration | Increase to ~0.6–0.7 |
 | Speech too fast | High exaggeration + high cfg | Reduce both slightly |
 | Wrong style / accent | Mismatched prompt language | Provide matching prompt |
 | Missing German prompt | No local clips | Add `voices/de_male.*` & `voices/de_female.*` |
+
+**For GPU-specific issues, see the detailed guide: `GPU_SETUP.md`**
 
 ## 9. Migration from Speechify
 
