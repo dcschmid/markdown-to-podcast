@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """Chatterbox Multilingual Podcast TTS
 -------------------------------------
@@ -47,7 +48,7 @@ from dotenv import load_dotenv
 try:
     from pydub import AudioSegment  # For combining segments & MP3 export
 except Exception as e:  # pragma: no cover
-    raise RuntimeError("pydub must be installed (pip install pydub)") from e
+    pass
 
 # Try loading chatterbox
 HAS_CHATTERBOX = False
